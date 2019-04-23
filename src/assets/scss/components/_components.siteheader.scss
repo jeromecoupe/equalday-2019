@@ -1,0 +1,93 @@
+// --------------------------------------------
+// =header
+// --------------------------------------------
+
+.c-siteheader {
+  background-color: $color-gray7;
+  padding-top: pxtorem(42px);
+  padding-bottom: pxtorem(42px);
+
+  @include mq(medium) {
+    padding-top: pxtorem(82px);
+    padding-bottom: pxtorem(24px);
+  }
+
+  @include mq(large) {
+    padding-top: pxtorem(120px);
+    padding-bottom: pxtorem(24px);
+  }
+}
+
+.c-siteheader__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.c-siteheader__logo {
+  margin: 0;
+  padding: 0;
+
+  & > svg {
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+
+    @include mq(large) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.c-siteheader__content {
+  margin-top: pxtorem(120px);
+  margin-bottom: pxtorem(180px);
+
+  @include mq(medium) {
+    width: 600px;
+  }
+
+  @include mq(large) {
+    width: 760px;
+  }
+}
+
+.c-siteheader__event {
+  margin-bottom: pxtorem(12px);
+  font-size: pxtorem(16px);
+  font-weight: 400;
+  color: $color-brand1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.c-siteheader__theme {
+  margin-bottom: pxtorem(42px);
+  font-family: $fontstack-alt;
+  font-size: pxtorem(31px);
+  line-height: (42/31);
+  font-weight: 600;
+  color: $color-white;
+
+  @include mq(medium) {
+    font-size: pxtorem(45px);
+    line-height: (54/45);
+  }
+
+  @include mq(large) {
+    font-size: pxtorem(61px);
+    line-height: (78/61);
+  }
+}
+
+.c-siteheader__data {
+  font-weight: 600;
+  color: $color-gray4;
+
+  @include mq(large) {
+    font-size: pxtorem(18px);
+  }
+}

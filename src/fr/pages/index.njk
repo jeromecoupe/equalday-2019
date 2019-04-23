@@ -1,0 +1,32 @@
+---
+permalink: index.html
+---
+
+{% extends "layouts/base.njk" %}
+{% set docLang = locale %}
+{% set metaTitle = "EQUAL Day 2019 - Droit et|ou désobéissance civile" %}
+
+{% block content %}
+  <main>
+    <div class="l-container">
+      <h1>Programme</h1>
+      {% set events = collections.eventsFR | reverse %}
+      {% for event in events %}
+        {% if loop.first %}<ul>{% endif %}
+
+          <li>
+            <p>
+              {{ event.data.startDate|date("HH[h]mm", locale) }}
+              -
+              {{ event.data.endDate|date("HH[h]mm", locale) }}
+            </p>
+            <h2>{{ event.data.title }}</h2>
+            {{ event.templateContent | safe }}
+            <p>{{ event.data.location }}</p>
+          </li>
+
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
+  </main>
+{% endblock %}
