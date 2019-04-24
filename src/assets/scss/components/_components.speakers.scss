@@ -1,0 +1,62 @@
+// --------------------------------------------
+// =speakers
+// --------------------------------------------
+
+.c-speaker {
+  margin: 0;
+  padding: 0;
+}
+
+.c-speaker__link {
+  display: block;
+  text-decoration: none;
+}
+
+.c-speaker__image-wrapper {
+  overflow: hidden;
+  margin-bottom: pxtorem(18px);
+  position: relative;
+  background-color: $color-gray7;
+  transition: all 0.2s ease-in-out;
+
+  a:hover & {
+    background-color: $color-brand4;
+  }
+}
+
+.c-speaker__image {
+  filter: grayscale(1);
+  mix-blend-mode: screen;
+  transition: all 0.2s ease-in-out;
+
+  @include mq(large) {
+    filter: grayscale(1) blur(5px);
+    transform: scale(1.07);
+  }
+
+  a:hover & {
+    background-color: $color-brand4;
+
+    @include mq(large) {
+      filter: grayscale(1) blur(0);
+    }
+  }
+}
+
+.c-speaker__name {
+  margin-bottom: pxtorem(6px);
+  font-weight: 600;
+  font-size: pxtorem(18px);
+  font-family: $fontstack-alt;
+  color: $color-gray8;
+  transition: all 0.2s ease-in-out;
+
+  a:hover > & {
+    color: $color-brand3;
+  }
+}
+
+.c-speaker__function {
+  margin-bottom: 0;
+  color: $color-gray3;
+}
