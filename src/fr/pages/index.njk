@@ -10,8 +10,8 @@ permalink: index.html
   <main>
 
     <div class="c-pagesection">
-      <div class="c-pagesection__body">
-        <section class="l-container  l-intro">
+      <section class="c-pagesection__body">
+        <div class="l-container  l-intro">
 
           <div class="l-intro__content">
             <h2 class="c-h2">La désobéissance civile et son rapport au droit.</h2>
@@ -22,12 +22,12 @@ permalink: index.html
             <p>Quelle frontière tracer entre désobéissance et insurrection, violence, ou encore révolte ? La désobéissance civile n’est-elle qu’un moyen d’action, ou une fin en soi ?</p>
             <p>Ce mode d’action est-il à même de convaincre l’opinion publique, de transcender les désaccords de la société pour exprimer une volonté commune ?</p>
           </div>
-          <img class="l-intro__image  o-fluidimg" src="img/protest_800.jpg" alt="Manifestant tenant un feu de bengale">
+          <img src="img/protest_800.jpg" class="l-intro__image  o-fluidimg" alt="Manifestant tenant un feu de bengale">
 
-        </section>
-      </div>
-      <div class="c-pagesection__body">
-        <section class="l-container  l-programme">
+        </div>
+      </section>
+      <section class="c-pagesection__body">
+        <div class="l-container  l-programme">
 
           <div class="l-programme__title">
             <h2 class="c-vtitle">Programme</h2>
@@ -57,8 +57,37 @@ permalink: index.html
             {% endfor %}
           </div>
 
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="c-pagesection  c-pagesection--light">
+      <section class="c-pagesection__body">
+        <div class="l-container  l-speakers">
+
+          <div class="l-speakers__title">
+            <h2 class="c-vtitle  c-vtitle--dark">Participants</h2>
+          </div>
+          <div class="l-speakers__content">
+            {% for speaker in speakersFr %}
+              {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
+                <li>
+
+                  <article class="c-speaker">
+                    <a class="c-speaker__link" href="{{ speaker.url }}">
+                      <p class="c-speaker__image-wrapper"><img src="img/speakers/{{ speaker.picture }}" class="c-speaker__image  o-fluidimg" alt="{{ speaker.name }} {{ speaker.surname }}"></p>
+                      <h3 class="c-speaker__name">{{ speaker.name }} {{ speaker.surname }}</h3>
+                      <p class="c-speaker__function">{{ speaker.function }}</p>
+                    </a>
+                  </article>
+
+                </li>
+              {% if loop.last %}</ul>{% endif %}
+            {% endfor %}
+          </div>
+
+        </div>
+      </section>
     </div>
 
   </main>

@@ -19,8 +19,8 @@
   }
 
   @include mq(large) {
-    padding-top: pxtorem(120px);
-    padding-bottom: pxtorem(120px);
+    padding-top: pxtorem(144px);
+    padding-bottom: pxtorem(144px);
   }
 }
 
@@ -37,6 +37,6 @@
   }
 
   @include mq(large) {
-    margin-top: pxtorem(120px);
+    margin-top: pxtorem(144px);
   }
 }

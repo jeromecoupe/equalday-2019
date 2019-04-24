@@ -1,0 +1,30 @@
+// --------------------------------------------
+// =layout for the speakers
+// --------------------------------------------
+
+.l-speakers {
+  @include mq(medium) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "c c c c c t";
+    grid-gap: pxtorem(36px);
+  }
+
+  @include mq(large) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "c c c c c c c t";
+  }
+}
+
+.l-speakers__title {
+  @include mq(medium) {
+    justify-self: flex-end;
+    grid-area: t;
+  }
+}
+
+.l-speakers__content {
+  @include mq(medium) {
+    grid-area: c;
+  }
+}
