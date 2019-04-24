@@ -1,0 +1,11 @@
+// --------------------------------------------
+// =text intros
+// --------------------------------------------
+
+.c-textintro {
+  color: $color-gray2;
+
+  @include mq(medium) {
+    font-size: pxtorem(18px);
+  }
+}

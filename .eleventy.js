@@ -14,7 +14,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // collections
-  eleventyConfig.addCollection("eventsFR", function(collection) {
+  eleventyConfig.addCollection("eventsFr", function(collection) {
     return collection.getFilteredByGlob("./src/fr/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
       else if (a.data.startDate < b.data.startDate) return 1;
@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addCollection("eventsEN", function(collection) {
+  eleventyConfig.addCollection("eventsEn", function(collection) {
     return collection.getFilteredByGlob("./src/en/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
       else if (a.data.startDate < b.data.startDate) return 1;
@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addCollection("eventsNL", function(collection) {
+  eleventyConfig.addCollection("eventsNl", function(collection) {
     return collection.getFilteredByGlob("./src/fr/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
       else if (a.data.startDate < b.data.startDate) return 1;
@@ -38,7 +38,7 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addCollection("speakersFR", function(collection) {
+  eleventyConfig.addCollection("speakersFr", function(collection) {
     return collection
       .getFilteredByGlob("./src/fr/speakers/*.md")
       .sort((a, b) => {
@@ -48,7 +48,7 @@ module.exports = function(eleventyConfig) {
       });
   });
 
-  eleventyConfig.addCollection("speakersEN", function(collection) {
+  eleventyConfig.addCollection("speakersEn", function(collection) {
     return collection
       .getFilteredByGlob("./src/en/speakers/*.md")
       .sort((a, b) => {
@@ -58,7 +58,7 @@ module.exports = function(eleventyConfig) {
       });
   });
 
-  eleventyConfig.addCollection("speakersNL", function(collection) {
+  eleventyConfig.addCollection("speakersNl", function(collection) {
     return collection
       .getFilteredByGlob("./src/nl/speakers/*.md")
       .sort((a, b) => {
