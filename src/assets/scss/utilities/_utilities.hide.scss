@@ -1,0 +1,12 @@
+// --------------------------------------------
+// =hide visually
+// --------------------------------------------
+
+.u-hide {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  top: -9999px;
+  left: -9999px;
+}
