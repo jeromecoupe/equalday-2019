@@ -1,0 +1,121 @@
+// --------------------------------------------
+// =titles
+// --------------------------------------------
+
+.c-h1 {
+  font-size: pxtorem(29px);
+  font-weight: 600;
+  line-height: (36/29);
+  font-family: $fontstack-alt;
+  color: $color-white;
+
+  @include mq(medium) {
+    font-size: pxtorem(31px);
+    line-height: (42/31);
+  }
+
+  @include mq(large) {
+    font-size: pxtorem(36px);
+    line-height: (42/36);
+  }
+}
+
+.c-h2 {
+  font-size: pxtorem(25px);
+  font-weight: 600;
+  line-height: (30/25);
+  font-family: $fontstack-alt;
+  color: $color-white;
+
+  @include mq(medium) {
+    font-size: pxtorem(29px);
+    line-height: (36/29);
+  }
+
+  @include mq(large) {
+    font-size: pxtorem(31px);
+    line-height: (42/31);
+  }
+}
+
+.c-h3 {
+  font-size: pxtorem(23px);
+  font-weight: 600;
+  line-height: (30/23);
+  font-family: $fontstack-alt;
+  color: $color-white;
+
+  @include mq(medium) {
+    font-size: pxtorem(25px);
+    line-height: (30/25);
+  }
+
+  @include mq(large) {
+    font-size: pxtorem(29px);
+    line-height: (36/29);
+  }
+}
+
+.c-h4 {
+  font-size: pxtorem(20px);
+  font-weight: 600;
+  line-height: (24/20);
+  font-family: $fontstack-alt;
+  color: $color-white;
+
+  @include mq(medium) {
+    font-size: pxtorem(23px);
+    line-height: (30/23);
+  }
+
+  @include mq(large) {
+    font-size: pxtorem(25px);
+    line-height: (30/25);
+  }
+}
+
+// --------------------------------------------
+// =vertical titles
+// --------------------------------------------
+
+/**
+ * vertical titles
+ * color variants
+*/
+
+.c-vtitle {
+  // flebox needed for chrome to behave with pseudo elements
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0 0 2rem;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: pxtorem(13px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-white;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 12px;
+  }
+
+  @include mq(medium) {
+    margin: 0;
+    writing-mode: vertical-lr;
+
+    &::before {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+}

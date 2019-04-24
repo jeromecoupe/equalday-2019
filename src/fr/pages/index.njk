@@ -8,25 +8,58 @@ permalink: index.html
 
 {% block content %}
   <main>
-    <div class="l-container">
-      <h1>Programme</h1>
-      {% set events = collections.eventsFR | reverse %}
-      {% for event in events %}
-        {% if loop.first %}<ul>{% endif %}
 
-          <li>
-            <p>
-              {{ event.data.startDate|date("HH[h]mm", locale) }}
-              -
-              {{ event.data.endDate|date("HH[h]mm", locale) }}
-            </p>
-            <h2>{{ event.data.title }}</h2>
-            {{ event.templateContent | safe }}
-            <p>{{ event.data.location }}</p>
-          </li>
+    <div class="c-pagesection">
+      <div class="c-pagesection__body">
+        <section class="l-container  l-intro">
 
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
+          <div class="l-intro__content">
+            <h2 class="c-h2">La désobéissance civile et son rapport au droit.</h2>
+            <div class="c-textintro">
+              <p>Ce mode d’action soulève un nombre important d’interrogations fondamentales que nous souhaitons explorer avec vous.</p>
+            </div>
+            <p>Désobéir est-il un droit. Et si oui, quelle place faut-il lui donner ? Quelle place y a-t-il pour le désobéissant face à la justice dans un Etat de droit ?</p>
+            <p>Quelle frontière tracer entre désobéissance et insurrection, violence, ou encore révolte ? La désobéissance civile n’est-elle qu’un moyen d’action, ou une fin en soi ?</p>
+            <p>Ce mode d’action est-il à même de convaincre l’opinion publique, de transcender les désaccords de la société pour exprimer une volonté commune ?</p>
+          </div>
+          <img class="l-intro__image  o-fluidimg" src="img/protest_800.jpg" alt="Manifestant tenant un feu de bengale">
+
+        </section>
+      </div>
+      <div class="c-pagesection__body">
+        <section class="l-container  l-programme">
+
+          <div class="l-programme__title">
+            <h2 class="c-vtitle">Programme</h2>
+          </div>
+          <div class="l-programme__content">
+            {% set events = collections.eventsFr | reverse %}
+            {% for event in events %}
+              {% if loop.first %}<ul class="l-grid  l-grid--2cols@medium  l-grid--3cols@large">{% endif %}
+
+                <li class="l-grid__unit">
+
+                  <article class="c-event">
+                    <p class="c-event__type">{{ event.data.type }}</p>
+                    <p class="c-event__date">
+                      <time datetime="{{ event.data.startDate|date('YYYY-MM-DDTHH:mm') }}">{{ event.data.startDate|date("HH[h]mm", locale) }}</time>
+                      -
+                      <time datetime="{{ event.data.endDate|date('YYYY-MM-DDTHH:mm') }}">{{ event.data.endDate|date("HH[h]mm", locale) }}</time>
+                    </p>
+                    <h3 class="c-event__title">{{ event.data.title }}</h3>
+                    {{ event.templateContent | safe }}
+                    <p class="c-event__location">{{ event.data.location }}</p>
+                  </article>
+
+                </li>
+
+              {% if loop.last %}</ul>{% endif %}
+            {% endfor %}
+          </div>
+
+        </section>
+      </div>
     </div>
+
   </main>
 {% endblock %}

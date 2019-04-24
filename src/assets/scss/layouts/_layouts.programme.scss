@@ -1,0 +1,29 @@
+// --------------------------------------------
+// =layout for the programme
+// --------------------------------------------
+
+.l-programme {
+  @include mq(medium) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "t c c c c c";
+    grid-gap: pxtorem(36px);
+  }
+
+  @include mq(large) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "t c c c c c c .";
+  }
+}
+
+.l-programme__title {
+  @include mq(medium) {
+    grid-area: t;
+  }
+}
+
+.l-programme__content {
+  @include mq(medium) {
+    grid-area: c;
+  }
+}

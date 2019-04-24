@@ -1,0 +1,159 @@
+// -------------------------------------
+// Settings
+// -------------------------------------
+
+$breakpoints-map: (
+  small: (
+    query: "all and (min-width: 500px)",
+    generate-grids: true,
+    generate-helpers: true
+  ),
+  medium: (
+    query: "all and (min-width: 750px)",
+    generate-grids: true,
+    generate-helpers: true
+  ),
+  large: (
+    query: "all and (min-width: 1140px)",
+    generate-grids: true,
+    generate-helpers: true
+  )
+) !default;
+
+$grid-gap: pxtorem(36px) !default;
+
+// -------------------------------------
+// Base flexbox classes
+// -------------------------------------
+.l-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  margin-left: ($grid-gap * -1);
+}
+
+.l-grid__unit {
+  box-sizing: border-box;
+  margin-bottom: $grid-gap;
+  padding-left: $grid-gap;
+  width: 100%;
+}
+
+.l-grid--2cols > .l-grid__unit {
+  width: 50%;
+}
+
+.l-grid--3cols > .l-grid__unit {
+  width: 33.33%;
+}
+
+.l-grid--4cols > .l-grid__unit {
+  width: 25%;
+}
+
+// -------------------------------------
+// Base grid classes
+// -------------------------------------
+@supports (display: grid) {
+  .l-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $grid-gap;
+  }
+
+  .l-grid--2cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .l-grid--3cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-grid--4cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  // flexbox overrides
+  .l-grid {
+    margin-left: 0;
+  }
+
+  .l-grid__unit {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .l-grid--2cols > .l-grid__unit,
+  .l-grid--3cols > .l-grid__unit,
+  .l-grid--4cols > .l-grid__unit {
+    width: auto;
+  }
+}
+
+// -------------------------------------
+// Responsive flexbox classes
+// -------------------------------------
+
+@each $breakpoint, $values in $breakpoints-map {
+  $name: $breakpoint;
+  $query: map-get($values, query);
+  $generate-grids: map-get($values, generate-grids);
+
+  @if ($generate-grids) {
+    @media #{$query} {
+      .l-grid--2cols\@#{$name} > .l-grid__unit {
+        width: 50%;
+      }
+
+      .l-grid--3cols\@#{$name} > .l-grid__unit {
+        width: 33.33%;
+      }
+
+      .l-grid--4cols\@#{$name} > .l-grid__unit {
+        width: 25%;
+      }
+    }
+  }
+}
+
+// -------------------------------------
+// Responsive Grid classes
+// -------------------------------------
+
+@supports (display: grid) {
+  @each $breakpoint, $values in $breakpoints-map {
+    $name: $breakpoint;
+    $query: map-get($values, query);
+    $generate-grids: map-get($values, generate-grids);
+
+    @if ($generate-grids) {
+      @media #{$query} {
+        .l-grid--2cols\@#{$name} {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .l-grid--3cols\@#{$name} {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .l-grid--4cols\@#{$name} {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        // flexbox overrides
+        .l-grid--2cols\@#{$name} > .l-grid__unit,
+        .l-grid--3cols\@#{$name} > .l-grid__unit,
+        .l-grid--4cols\@#{$name} > .l-grid__unit {
+          width: auto;
+        }
+      }
+    }
+  }
+}
