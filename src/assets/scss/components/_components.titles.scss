@@ -105,7 +105,8 @@
     content: "";
     width: 10px;
     height: 10px;
-    background-color: red;
+    background: url(../img/icon_vtitle.svg) 0 0 no-repeat;
+    background-size: cover;
     margin-right: 12px;
   }
 
@@ -118,4 +119,8 @@
       margin-bottom: 12px;
     }
   }
+}
+
+.c-vtitle--dark {
+  color: $color-gray8;
 }

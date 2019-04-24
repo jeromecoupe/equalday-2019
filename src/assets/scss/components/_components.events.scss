@@ -3,7 +3,8 @@
 // --------------------------------------------
 
 .c-event {
-  /* nothing here */
+  margin: 0;
+  padding: 0;
 }
 
 .c-event__type {
@@ -27,6 +28,11 @@
   line-height: (30 / 18);
   font-family: $fontstack-alt;
   color: $color-gray1;
+
+  @include mq(large) {
+    font-size: pxtorem(20px);
+    line-height: (30 / 20);
+  }
 }
 
 .c-event__location {
