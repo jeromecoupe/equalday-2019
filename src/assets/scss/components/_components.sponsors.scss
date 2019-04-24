@@ -1,0 +1,34 @@
+// --------------------------------------------
+// =sponsors
+// --------------------------------------------
+
+.c-sponsors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-left: pxtorem(36px * -1);
+}
+
+.c-sponsors__item {
+  box-sizing: border-box;
+  padding-left: pxtorem(36px);
+  margin-bottom: pxtorem(24px);
+  width: 240px;
+  flex: 0 0 auto;
+}
+
+.c-sponsors__link {
+  display: block;
+  border: 1px solid $color-gray1;
+}
+
+.c-sponsors__logo {
+  filter: grayscale(1);
+}

@@ -38,36 +38,6 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addCollection("speakersFr", function(collection) {
-    return collection
-      .getFilteredByGlob("./src/fr/speakers/*.md")
-      .sort((a, b) => {
-        if (a.data.surname > b.data.surname) return -1;
-        else if (a.data.surname < b.data.surname) return 1;
-        else return 0;
-      });
-  });
-
-  eleventyConfig.addCollection("speakersEn", function(collection) {
-    return collection
-      .getFilteredByGlob("./src/en/speakers/*.md")
-      .sort((a, b) => {
-        if (a.data.surname > b.data.surname) return -1;
-        else if (a.data.surname < b.data.surname) return 1;
-        else return 0;
-      });
-  });
-
-  eleventyConfig.addCollection("speakersNl", function(collection) {
-    return collection
-      .getFilteredByGlob("./src/nl/speakers/*.md")
-      .sort((a, b) => {
-        if (a.data.surname > b.data.surname) return -1;
-        else if (a.data.surname < b.data.surname) return 1;
-        else return 0;
-      });
-  });
-
   // Base config
   return {
     dir: {
