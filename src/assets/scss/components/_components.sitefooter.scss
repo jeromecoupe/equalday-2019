@@ -14,6 +14,7 @@
   & a {
     color: $color-gray3;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       color: $color-brand2;
@@ -63,6 +64,12 @@
   padding-top: pxtorem(18px);
   padding-bottom: pxtorem(18px);
   border-top: 1px solid $color-gray6;
+
+  font-size: pxtorem(12px);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-gray4;
 
   @include mq(medium) {
     padding-top: pxtorem(24px);
