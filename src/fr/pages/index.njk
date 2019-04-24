@@ -88,6 +88,25 @@ permalink: index.html
 
         </div>
       </section>
+      <section class="c-pagesection__body">
+        <div class="l-container">
+
+          <h2 class="u-hide">Sponsors</h2>
+
+          {% for sponsor in sponsors %}
+            {% if loop.first %}<ul class="c-sponsors">{% endif %}
+              <li class="c-sponsors__item">
+
+                <a class="c-sponsors__link" href="{{ sponsor.url }}">
+                  <img class="c-sponsors__logo  o-fluidimg" src="img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                </a>
+
+              </li>
+            {% if loop.last %}</ul>{% endif %}
+          {% endfor %}
+
+        </div>
+      </section>
     </div>
 
   </main>
