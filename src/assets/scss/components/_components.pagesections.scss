@@ -1,0 +1,42 @@
+// --------------------------------------------
+// =page sections
+// --------------------------------------------
+
+/**
+ * top and bottom padding
+ * variants for colors
+ * can have multiple pagesection__body
+*/
+
+.c-pagesection {
+  padding-top: pxtorem(60px);
+  padding-bottom: pxtorem(60px);
+  background-color: $color-gray8;
+
+  @include mq(medium) {
+    padding-top: pxtorem(82px);
+    padding-bottom: pxtorem(82px);
+  }
+
+  @include mq(large) {
+    padding-top: pxtorem(120px);
+    padding-bottom: pxtorem(120px);
+  }
+}
+
+.c-pagesection--light {
+  background-color: $color-gray1;
+  color: $color-gray8;
+}
+
+.c-pagesection__body + .c-pagesection__body {
+  margin-top: pxtorem(60px);
+
+  @include mq(medium) {
+    margin-top: pxtorem(82px);
+  }
+
+  @include mq(large) {
+    margin-top: pxtorem(120px);
+  }
+}

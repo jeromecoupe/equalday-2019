@@ -86,8 +86,5 @@
 .c-siteheader__data {
   font-weight: 600;
   color: $color-gray4;
-
-  @include mq(large) {
-    font-size: pxtorem(18px);
-  }
+  letter-spacing: 1px;
 }

@@ -1,0 +1,35 @@
+// --------------------------------------------
+// =events
+// --------------------------------------------
+
+.c-event {
+  /* nothing here */
+}
+
+.c-event__type {
+  margin-bottom: pxtorem(12px);
+  font-weight: 600;
+  font-size: pxtorem(12px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-gray3;
+}
+
+.c-event__date {
+  margin-bottom: pxtorem(12px);
+  font-size: pxtorem(20px);
+  color: $color-brand2;
+}
+
+.c-event__title {
+  margin-bottom: pxtorem(18px);
+  font-size: pxtorem(18px);
+  line-height: (30 / 18);
+  font-family: $fontstack-alt;
+  color: $color-gray1;
+}
+
+.c-event__location {
+  margin-bottom: 0;
+  color: $color-gray4;
+}
