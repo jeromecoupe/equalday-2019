@@ -1,0 +1,71 @@
+// --------------------------------------------
+// =footer
+// --------------------------------------------
+
+.c-sitefooter {
+  background-image: linear-gradient(
+    to bottom,
+    $color-white 0,
+    $color-white 42px,
+    $color-gray8 42px,
+    $color-gray8 100%
+  );
+
+  & a {
+    color: $color-gray3;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-brand2;
+    }
+  }
+
+  @include mq(medium) {
+    background-image: linear-gradient(
+      to bottom,
+      $color-white 0,
+      $color-white 60px,
+      $color-gray8 60px,
+      $color-gray8 100%
+    );
+  }
+
+  @include mq(large) {
+    background-image: linear-gradient(
+      to bottom,
+      $color-white 0,
+      $color-white 84px,
+      $color-gray8 84px,
+      $color-gray8 100%
+    );
+  }
+}
+
+.c-sitefooter__info {
+  padding-top: pxtorem(30px);
+  padding-bottom: pxtorem(30px);
+
+  @include mq(medium) {
+    padding-top: pxtorem(42px);
+    padding-bottom: pxtorem(42px);
+  }
+
+  @include mq(large) {
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-top: pxtorem(60px);
+    padding-bottom: pxtorem(60px);
+  }
+}
+
+.c-sitefooter__copyright {
+  margin: 0;
+  padding-top: pxtorem(18px);
+  padding-bottom: pxtorem(18px);
+  border-top: 1px solid $color-gray6;
+
+  @include mq(medium) {
+    padding-top: pxtorem(24px);
+    padding-bottom: pxtorem(24px);
+  }
+}

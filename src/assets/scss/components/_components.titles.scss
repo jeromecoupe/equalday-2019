@@ -75,6 +75,20 @@
 }
 
 // --------------------------------------------
+// =footer titles
+// --------------------------------------------
+
+.c-footertitle {
+  margin-bottom: pxtorem(24px);
+
+  font-size: pxtorem(16px);
+  font-weight: 600;
+  line-height: (24/16);
+  font-family: $fontstack-alt;
+  color: $color-white;
+}
+
+// --------------------------------------------
 // =vertical titles
 // --------------------------------------------
 
