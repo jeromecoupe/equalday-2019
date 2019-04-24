@@ -16,6 +16,10 @@
 
 .c-lggnav__item:not(:last-child) {
   margin-right: pxtorem(3px);
+
+  @include mq(medium) {
+    margin-right: pxtorem(6px);
+  }
 }
 
 .c-lggnav__link {
@@ -25,8 +29,23 @@
   font-size: pxtorem(13px);
   font-weight: 600;
   line-height: 1;
+  letter-spacing: 1px;
   text-decoration: none;
   color: $color-gray4;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-gray3;
+  }
+
+  @include mq(medium) {
+    font-size: pxtorem(14px);
+  }
+
+  @include mq(large) {
+    font-size: pxtorem(16px);
+  }
 }
 
 .c-lggnav__link.is-active {

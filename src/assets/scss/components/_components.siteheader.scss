@@ -4,6 +4,11 @@
 
 .c-siteheader {
   background-color: $color-gray7;
+  background-image: url(../img/banner_home_1500.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   padding-top: pxtorem(42px);
   padding-bottom: pxtorem(42px);
 
@@ -43,8 +48,8 @@
 }
 
 .c-siteheader__content {
-  margin-top: pxtorem(120px);
-  margin-bottom: pxtorem(180px);
+  margin-top: pxtorem(180px);
+  margin-bottom: pxtorem(240px);
 
   @include mq(medium) {
     width: 600px;
@@ -85,6 +90,6 @@
 
 .c-siteheader__data {
   font-weight: 600;
-  color: $color-gray4;
+  color: $color-gray3;
   letter-spacing: 1px;
 }

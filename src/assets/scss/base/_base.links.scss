@@ -1,0 +1,12 @@
+// --------------------------------------------
+// =links
+// --------------------------------------------
+
+a {
+  color: $color-brand2;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
