@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("events_nl", function(collection) {
-    return collection.getFilteredByGlob("./src/fr/events/*.md").sort((a, b) => {
+    return collection.getFilteredByGlob("./src/nl/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
       else if (a.data.startDate < b.data.startDate) return 1;
       else return 0;
