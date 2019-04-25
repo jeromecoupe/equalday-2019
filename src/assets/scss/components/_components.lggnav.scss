@@ -31,7 +31,7 @@
   line-height: 1;
   letter-spacing: 1px;
   text-decoration: none;
-  color: $color-gray4;
+  color: $color-white;
 
   transition: all 0.2s ease-in-out;
 
@@ -49,5 +49,5 @@
 }
 
 .c-lggnav__link.is-active {
-  color: $color-white;
+  color: $color-brand1;
 }

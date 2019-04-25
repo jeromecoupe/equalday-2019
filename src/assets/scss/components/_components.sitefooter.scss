@@ -63,7 +63,7 @@
   margin: 0;
   padding-top: pxtorem(18px);
   padding-bottom: pxtorem(18px);
-  border-top: 1px solid $color-gray6;
+  border-top: 1px solid rgba($color-white, 0.1);
 
   font-size: pxtorem(12px);
   font-weight: 600;
@@ -74,5 +74,10 @@
   @include mq(medium) {
     padding-top: pxtorem(24px);
     padding-bottom: pxtorem(24px);
+  }
+
+  @include mq(large) {
+    padding-top: pxtorem(36px);
+    padding-bottom: pxtorem(36px);
   }
 }
