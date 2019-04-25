@@ -27,6 +27,12 @@
 .c-sponsors__link {
   display: block;
   border: 1px solid $color-gray1;
+
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover {
+    border-color: $color-gray2;
+  }
 }
 
 .c-sponsors__logo {

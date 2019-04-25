@@ -9,7 +9,7 @@ permalink: index.html
 {% block content %}
   <main>
 
-    <div class="c-pagesection">
+    <div class="c-pagesection  c-pagesection--intro">
       <section class="c-pagesection__body">
         <div class="l-container  l-intro">
 
@@ -22,7 +22,16 @@ permalink: index.html
             <p>Quelle frontière tracer entre désobéissance et insurrection, violence, ou encore révolte ? La désobéissance civile n’est-elle qu’un moyen d’action, ou une fin en soi ?</p>
             <p>Ce mode d’action est-il à même de convaincre l’opinion publique, de transcender les désaccords de la société pour exprimer une volonté commune ?</p>
           </div>
-          <img src="img/protest_800.jpg" class="l-intro__image  o-fluidimg" alt="Manifestant tenant un feu de bengale">
+
+          <img class="l-intro__image  o-fluidimg"
+               src="img/protest_400.jpg"
+               srcset="img/protest_400.jpg 400w,
+                       img/protest_600.jpg 600w,
+                       img/protest_800.jpg 800w"
+               sizes="(min-width: 1300px) 465px,
+                      (min-width: 750px) 33vw,
+                      100vw"
+               alt="Manifestant tenant un feu de bengale">
 
         </div>
       </section>
