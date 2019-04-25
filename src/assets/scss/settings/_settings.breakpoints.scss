@@ -17,5 +17,10 @@ $breakpoints-map: (
     query: "all and (min-width: 1140px)",
     generate-grids: true,
     generate-helpers: true
+  ),
+  xlarge: (
+    query: "all and (min-width: 1340px)",
+    generate-grids: false,
+    generate-helpers: false
   )
 );
