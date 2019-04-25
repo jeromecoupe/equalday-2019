@@ -6,6 +6,10 @@ const path = require("path");
 // config
 const assetsDirs = [
   {
+    src: "./src/assets/img/",
+    dist: "./dist/img/"
+  },
+  {
     src: "./src/assets/fonts/",
     dist: "./dist/fonts/"
   }
