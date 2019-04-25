@@ -1,12 +1,12 @@
 <footer class="c-sitefooter">
   <div class="l-container">
 
-    <img class="c-sitefooter__image  o-fluidimg" src="img/flagey_1500.jpg" alt="Flagey building">
+    <img class="c-sitefooter__image  o-fluidimg" src="/img/flagey_1500.jpg" alt="Flagey building">
 
     <div class="c-sitefooter__info  l-grid  l-grid--3cols@medium">
       <div class="l-grid__unit">
 
-        <h2 class="c-footertitle">Contact</h2>
+        <h2 class="c-footertitle">{{ footer[locale].titleContact }}</h2>
         <ul class="c-vlist  c-vlist--xs">
           <li><a href="mailto:hello@equalday.eu">hello@equalday.eu</a></li>
           <li><a href="tel:003228999800">+32 (0)2 899 98 00</a></li>
@@ -20,27 +20,27 @@
       </div>
       <div class="l-grid__unit">
 
-        <h2 class="c-footertitle">Adresse</h2>
+        <h2 class="c-footertitle">{{ footer[locale].titleAdress }}</h2>
         <p>
           Flagey<br>
-          Place Sainte-Croix,<br>
-          1050 Bruxelles
+          {{ footer[locale].adressStreet }},<br>
+          {{ footer[locale].adressPostcode }} {{ footer[locale].adressCity }}
         </p>
-        <p><a href="#">Google maps</p></a>
+        <p><a href="https://goo.gl/maps/8VYehs1GEEC6RKHU7">{{ footer[locale].directionsLabel }}</p></a>
 
       </div>
       <div class="l-grid__unit">
-        <h2 class="c-footertitle">Transports</h2>
+        <h2 class="c-footertitle">{{ footer[locale].titleTransports }}</h2>
         <ul class="c-vlist  c-vlist--xs">
-          <li>Tram 81</li>
+          <li>Tram: 81</li>
           <li>Bus: 38, 59, 60, 71</li>
-          <li>Parking disponible</li>
+          <li>{{ footer[locale].transportsParking }}</li>
         </ul>
-        <p><a href="#">Site STIB</p></a>
+        <p><a href="http://www.stib-mivb.be/">{{ footer[locale].transportsSTIB }}</p></a>
       </div>
     </div>
 
-    <p class="c-sitefooter__copyright">Copyright 2019 - EQUAL Partners - <a href="#">Conditions d'utilisation</a></p>
+    <p class="c-sitefooter__copyright">Copyright {{ site.buildTime | date("YYYY") }} - EQUAL Partners - <a href="/docs/legal/{{ footer[locale].legalDoc }}">{{ footer[locale].legalLabel }}</a></p>
 
   </div>
 </footer>

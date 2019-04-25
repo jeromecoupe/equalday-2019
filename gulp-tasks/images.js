@@ -1,13 +1,11 @@
 // packages
 const imagemin = require("gulp-imagemin");
-const newer = require("gulp-newer");
 const gulp = require("gulp");
 
 // optimize images
 function optimiseImages() {
   return gulp
     .src("./src/assets/img/**/*")
-    .pipe(newer("./dist/img/"))
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
@@ -18,7 +16,7 @@ function optimiseImages() {
         })
       ])
     )
-    .pipe(gulp.dest("./dist/img/"));
+    .pipe(gulp.dest("./src/assets/img/"));
 }
 
 // exports (Common JS)
