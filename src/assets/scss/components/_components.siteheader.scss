@@ -3,23 +3,30 @@
 // --------------------------------------------
 
 .c-siteheader {
-  background-color: $color-gray7;
-  background-image: url(../img/banner_home_1500.jpg);
-  background-position: 50% 50%;
+  background-color: $color-gray8;
+  background-image: url(../img/banner_home_600.jpg);
+  background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 
   padding-top: pxtorem(42px);
   padding-bottom: pxtorem(42px);
 
+  @include mq(small) {
+    background-position: 50% 50%;
+    background-image: url(../img/banner_home_800.jpg);
+  }
+
   @include mq(medium) {
     padding-top: pxtorem(82px);
-    padding-bottom: pxtorem(24px);
+    padding-bottom: pxtorem(42px);
+    background-image: url(../img/banner_home_1024.jpg);
   }
 
   @include mq(large) {
     padding-top: pxtorem(120px);
-    padding-bottom: pxtorem(24px);
+    padding-bottom: pxtorem(42px);
+    background-image: url(../img/banner_home_1500.jpg);
   }
 }
 
@@ -40,6 +47,11 @@
     width: 42px;
     height: 42px;
 
+    @include mq(medium) {
+      width: 48px;
+      height: 48px;
+    }
+
     @include mq(large) {
       width: 60px;
       height: 60px;
@@ -48,14 +60,18 @@
 }
 
 .c-siteheader__content {
-  margin-top: pxtorem(180px);
-  margin-bottom: pxtorem(240px);
+  margin-top: pxtorem(84px);
+  margin-bottom: pxtorem(84px);
 
   @include mq(medium) {
+    margin-top: pxtorem(142px);
+    margin-bottom: pxtorem(142px);
     width: 600px;
   }
 
   @include mq(large) {
+    margin-top: pxtorem(180px);
+    margin-bottom: pxtorem(240px);
     width: 760px;
   }
 }
