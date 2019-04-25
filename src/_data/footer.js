@@ -10,7 +10,7 @@ module.exports = {
     transportsParking: "Parking disponible",
     transportsSTIB: "Site STIB",
     legalLabel: "Conditions d'utilisation",
-    legalDoc: "conditions_fr.pdf"
+    legalDoc: "legal_conditions_fr.pdf"
   },
   nl: {
     titleContact: "Contact",
@@ -23,7 +23,7 @@ module.exports = {
     transportsParking: "Parkeerplaatsen beschikbaar",
     transportsSTIB: "Website MIVB",
     legalLabel: "Algemeene Voorwaarden",
-    legalDoc: "conditions_nl.pdf"
+    legalDoc: "legal_conditions_nl.pdf"
   },
   en: {
     titleContact: "Contact",
@@ -36,6 +36,6 @@ module.exports = {
     transportsParking: "Parking available",
     transportsSTIB: "Website STIB",
     legalLabel: "Terms and conditions",
-    legalDoc: "conditions_fr.pdf"
+    legalDoc: "legal_conditions_fr.pdf"
   }
 };
