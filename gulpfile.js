@@ -17,7 +17,7 @@ function watchFiles() {
     ["./src/assets/js/**/*", "./webpack.config.js"],
     gulp.series(js.lint, js.build)
   );
-  gulp.watch("./src/assets/img/**/*", gulp.series(img.optimise));
+  gulp.watch("./src/assets/img/**/*", copy.assets);
   gulp.watch("./src/assets/fonts/**/*", copy.assets);
   gulp.watch(
     [".eleventy.js", ".eleventyignore", "./src/**/*", "!./src/assets/**/*"],
@@ -29,7 +29,6 @@ function watchFiles() {
 const watch = gulp.parallel(watchFiles, server.start);
 const build = gulp.series(
   clean.dist,
-  img.optimise,
   gulp.parallel(
     copy.assets,
     css.build,
@@ -39,6 +38,7 @@ const build = gulp.series(
 );
 
 // expose tasks to CLI
+exports.images = img.optimise;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;

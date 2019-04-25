@@ -14,7 +14,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // collections
-  eleventyConfig.addCollection("eventsFr", function(collection) {
+  eleventyConfig.addCollection("events_fr", function(collection) {
     return collection.getFilteredByGlob("./src/fr/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
       else if (a.data.startDate < b.data.startDate) return 1;
@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addCollection("eventsEn", function(collection) {
+  eleventyConfig.addCollection("events_en", function(collection) {
     return collection.getFilteredByGlob("./src/en/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
       else if (a.data.startDate < b.data.startDate) return 1;
@@ -30,8 +30,8 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addCollection("eventsNl", function(collection) {
-    return collection.getFilteredByGlob("./src/fr/events/*.md").sort((a, b) => {
+  eleventyConfig.addCollection("events_nl", function(collection) {
+    return collection.getFilteredByGlob("./src/nl/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
       else if (a.data.startDate < b.data.startDate) return 1;
       else return 0;
