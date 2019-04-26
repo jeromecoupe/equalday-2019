@@ -45,7 +45,7 @@ permalink: /{{ locale }}/index.html
           <div class="l-programme__content">
 
             {# Get events #}
-            {% for event in events_en | reverse %}
+            {% for event in collections.events_en | reverse %}
               {% if loop.first %}<ul class="l-grid  l-grid--2cols@medium  l-grid--3cols@large">{% endif %}
 
                 <li class="l-grid__unit">
