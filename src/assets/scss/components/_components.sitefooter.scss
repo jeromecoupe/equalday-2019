@@ -60,13 +60,13 @@
 }
 
 .c-sitefooter__copyright {
-  margin: 0;
   padding-top: pxtorem(18px);
   padding-bottom: pxtorem(18px);
   border-top: 1px solid rgba($color-white, 0.1);
 
   font-size: pxtorem(12px);
   font-weight: 600;
+  line-height: 2;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: $color-gray4;

@@ -3,7 +3,7 @@ permalink: index.html
 ---
 
 {% extends "layouts/base.njk" %}
-{% set locale = locale %}
+{% set metaLang = locale %}
 {% set metaTitle = site[locale].metaTitle %}
 {% set metaDescription = site[locale].metaDescription %}
 
@@ -43,8 +43,9 @@ permalink: index.html
             <h2 class="c-vtitle">Programme</h2>
           </div>
           <div class="l-programme__content">
-            {% set events = collections["events_" ~ locale] %}
-            {% for event in events | reverse %}
+
+            {# Get events #}
+            {% for event in events_fr | reverse %}
               {% if loop.first %}<ul class="l-grid  l-grid--2cols@medium  l-grid--3cols@large">{% endif %}
 
                 <li class="l-grid__unit">
@@ -80,6 +81,7 @@ permalink: index.html
           </div>
           <div class="l-speakers__content">
 
+            {# Get speakers #}
             {% for speaker in speakers_fr %}
               {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
                 <li>
@@ -104,6 +106,7 @@ permalink: index.html
 
           <h2 class="u-hide">Sponsors</h2>
 
+          {# Get sponsors #}
           {% for sponsor in sponsors %}
             {% if loop.first %}<ul class="c-sponsors">{% endif %}
               <li class="c-sponsors__item">
