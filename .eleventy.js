@@ -38,8 +38,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // pass through
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
+
   // Base config
   return {
+    passthroughFileCopy: true,
     dir: {
       input: "src",
       output: "dist"
