@@ -3,6 +3,8 @@
 // --------------------------------------------
 
 .c-siteheader {
+  position: relative;
+
   background-color: $color-gray8;
   background-image: url(../img/banner_home_600.jpg);
   background-position: 100% 50%;
@@ -11,6 +13,28 @@
 
   padding-top: pxtorem(42px);
   padding-bottom: pxtorem(42px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    width: calc(100% - 24px);
+    background-color: $color-gray8;
+
+    @include mq(medium) {
+      width: calc(100% - 30px);
+    }
+
+    @include mq(large) {
+      height: 42px;
+    }
+
+    @include mq(xlarge) {
+      width: calc(50% + (1300px / 2) + 60px);
+    }
+  }
 
   @include mq(small) {
     background-position: 50% 50%;
