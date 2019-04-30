@@ -1,0 +1,16 @@
+// -------------------------------------
+// Alerts
+// -------------------------------------
+
+.l-alerts {
+  @include mq(large) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". c c c c c c .";
+    grid-gap: pxtorem(36px);
+  }
+}
+
+.l-alerts__content {
+  grid-area: c;
+}

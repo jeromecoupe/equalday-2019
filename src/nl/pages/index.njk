@@ -35,6 +35,33 @@ permalink: /{{ locale }}/index.html
 
         </div>
       </section>
+
+      {# check if alerts #}
+      {% if collections.alerts_nl | length %}
+        <section class="c-pagesection__body">
+          <div class="l-container  l-alerts">
+
+            <div class="l-alerts__content">
+              {% for alert in collections.alerts_nl | reverse | limit(2) %}
+              <ul class="c-vlist">
+                <li>
+
+                  <div class="c-alert">
+                    {{ alert.templateContent | safe }}
+                  </div>
+
+                </li>
+              </ul>
+              {% endfor %}
+            </div>
+
+          </div>
+
+        </section>
+      {% endif %}
+
+      {# check if events #}
+      {% if events_nl | length %}
       <section class="c-pagesection__body">
         <div class="l-container  l-programme">
 
@@ -69,6 +96,7 @@ permalink: /{{ locale }}/index.html
 
         </div>
       </section>
+      {% endif %}
     </div>
 
     <div class="c-pagesection  c-pagesection--light">

@@ -1,0 +1,19 @@
+// --------------------------------------------
+// =alerts
+// --------------------------------------------
+
+.c-alert {
+  padding: pxtorem(30px);
+  border-left: 3px solid $color-brand1;
+  background-color: $color-gray7;
+  color: $color-gray3;
+
+  & strong {
+    font-weight: 400;
+    color: $color-white;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
