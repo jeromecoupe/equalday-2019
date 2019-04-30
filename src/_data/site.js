@@ -2,7 +2,6 @@ module.exports = {
   buildTime: new Date(),
   baseUrl: "https://www.equalday.eu",
   name: "EQUAL Day 2019",
-  registrations: false,
   en: {
     metaTitle: "EN -- EQUAL Day 2019 - Droit et|ou désobéissance civile",
     metaDescription:

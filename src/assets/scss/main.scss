@@ -12,6 +12,7 @@
 @import "base/_base.body.scss";
 @import "base/_base.html.scss";
 @import "base/_base.margins.scss";
+@import "base/_base.links.scss";
 
 @import "objects/_objects.fluid-images.scss";
 
@@ -20,6 +21,7 @@
 @import "layouts/_layouts.programme.scss";
 @import "layouts/_layouts.speakers.scss";
 @import "layouts/_layouts.grids.scss";
+@import "layouts/_layouts.alerts.scss";
 
 @import "components/_components.lggnav.scss";
 @import "components/_components.siteheader.scss";
@@ -33,5 +35,6 @@
 @import "components/_components.lists.scss";
 @import "components/_components.socialmedia.scss";
 @import "components/_components.buttons.scss";
+@import "components/_components.alerts.scss";
 
 @import "utilities/_utilities.hide.scss";
