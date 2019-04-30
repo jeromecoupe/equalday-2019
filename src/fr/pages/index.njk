@@ -35,40 +35,68 @@ permalink: index.html
 
         </div>
       </section>
-      <section class="c-pagesection__body">
-        <div class="l-container  l-programme">
 
-          <div class="l-programme__title">
-            <h2 class="c-vtitle">Programme</h2>
-          </div>
-          <div class="l-programme__content">
+      {# check if alerts #}
+      {% if collections.alerts_fr | length %}
+        <section class="c-pagesection__body">
+          <div class="l-container  l-alerts">
 
-            {# Get events #}
-            {% for event in collections.events_fr | reverse %}
-              {% if loop.first %}<ul class="l-grid  l-grid--2cols@medium  l-grid--3cols@large">{% endif %}
+            <div class="l-alerts__content">
+              {% for alert in collections.alerts_fr | reverse | limit(2) %}
+              <ul class="c-vlist">
+                <li>
 
-                <li class="l-grid__unit">
-
-                  <article class="c-event">
-                    <p class="c-event__type">{{ event.data.type }}</p>
-                    <p class="c-event__date">
-                      <time datetime="{{ event.data.startDate|date('YYYY-MM-DDTHH:mm') }}">{{ event.data.startDate|date("HH[h]mm", locale) }}</time>
-                      -
-                      <time datetime="{{ event.data.endDate|date('YYYY-MM-DDTHH:mm') }}">{{ event.data.endDate|date("HH[h]mm", locale) }}</time>
-                    </p>
-                    <h3 class="c-event__title">{{ event.data.title }}</h3>
-                    {{ event.templateContent | safe }}
-                    <p class="c-event__location">{{ event.data.location }}</p>
-                  </article>
+                  <div class="c-alert">
+                    {{ alert.templateContent | safe }}
+                  </div>
 
                 </li>
+              </ul>
+              {% endfor %}
+            </div>
 
-              {% if loop.last %}</ul>{% endif %}
-            {% endfor %}
           </div>
 
-        </div>
-      </section>
+        </section>
+      {% endif %}
+
+      {# check if events #}
+      {% if events_fr | length %}
+        <section class="c-pagesection__body">
+          <div class="l-container  l-programme">
+
+            <div class="l-programme__title">
+              <h2 class="c-vtitle">Programme</h2>
+            </div>
+            <div class="l-programme__content">
+
+              {# Get events #}
+              {% for event in collections.events_fr | reverse %}
+                {% if loop.first %}<ul class="l-grid  l-grid--2cols@medium  l-grid--3cols@large">{% endif %}
+
+                  <li class="l-grid__unit">
+
+                    <article class="c-event">
+                      <p class="c-event__type">{{ event.data.type }}</p>
+                      <p class="c-event__date">
+                        <time datetime="{{ event.data.startDate|date('YYYY-MM-DDTHH:mm') }}">{{ event.data.startDate|date("HH[h]mm", locale) }}</time>
+                        -
+                        <time datetime="{{ event.data.endDate|date('YYYY-MM-DDTHH:mm') }}">{{ event.data.endDate|date("HH[h]mm", locale) }}</time>
+                      </p>
+                      <h3 class="c-event__title">{{ event.data.title }}</h3>
+                      {{ event.templateContent | safe }}
+                      <p class="c-event__location">{{ event.data.location }}</p>
+                    </article>
+
+                  </li>
+
+                {% if loop.last %}</ul>{% endif %}
+              {% endfor %}
+            </div>
+
+          </div>
+        </section>
+      {% endif %}
     </div>
 
     <div class="c-pagesection  c-pagesection--light">

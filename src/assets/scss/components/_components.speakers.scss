@@ -10,6 +10,10 @@
 .c-speaker__link {
   display: block;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .c-speaker__image-wrapper {
