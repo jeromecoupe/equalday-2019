@@ -132,4 +132,13 @@
   font-weight: 600;
   color: $color-gray3;
   letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.c-siteheader__cta {
+  margin-top: pxtorem(36px);
+
+  @include mq(large) {
+    margin-top: pxtorem(60px);
+  }
 }
