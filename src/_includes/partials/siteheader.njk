@@ -16,6 +16,9 @@
       <h1 class="c-siteheader__event">{{ header[locale].eventName }}</h1>
       <h2 class="c-siteheader__theme">{{ header[locale].eventTitle }}</h2>
       <p class="c-siteheader__data">{{ header[locale].eventData }}</p>
+      {% if site.registrations === true %}
+        <p class="c-siteheader__cta"><a class="c-button" href="{{ header[locale].registrationsUrl }}">{{ header[locale].registrationsLabel }}</a></p>
+      {% endif %}
     </div>
 
   </div>

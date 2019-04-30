@@ -1,0 +1,27 @@
+// --------------------------------------------
+// =buttons
+// --------------------------------------------
+
+.c-button {
+  display: inline-block;
+  padding: pxtorem(18px) pxtorem(36px);
+  cursor: pointer;
+  border: none;
+
+  font-weight: 600;
+  font-size: pxtorem(13px);
+  line-height: 1;
+  font-family: $fontstack-main;
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  background-color: $color-brand2;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-1px);
+    background-color: $color-brand3;
+  }
+}
