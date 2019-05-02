@@ -64,17 +64,10 @@
   }
 }
 
-.c-sitefooter__copyright {
+.c-sitefooter__end {
   padding-top: pxtorem(18px);
   padding-bottom: pxtorem(18px);
   border-top: 1px solid rgba($color-white, 0.1);
-
-  font-size: pxtorem(12px);
-  font-weight: 600;
-  line-height: 2;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: $color-gray4;
 
   @include mq(medium) {
     padding-top: pxtorem(24px);
@@ -84,5 +77,16 @@
   @include mq(large) {
     padding-top: pxtorem(36px);
     padding-bottom: pxtorem(36px);
+    justify-content: space-between;
   }
+}
+
+.c-sitefooter__copyright {
+  font-size: pxtorem(12px);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $color-gray4;
 }
