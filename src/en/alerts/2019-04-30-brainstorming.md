@@ -1,4 +1,4 @@
 ---
 expiryDate: "2019-05-23"
 ---
-Le programme de l’EQUAL Day comme sa forme définitive sont en cours d’élaboration. Première séance de brainstorming le **23.05.2019 de 18h00 à 20h00** à Flagey. [Inscrivez-vous](https://www.eventbrite.fr/e/equal-academy-tickets-53591135529#tickets).
+The programme for EQUAL Day is still being developed, as is its final form.  The first brainstorming session will be held **from 06 pm to 08 pm on 23.05.2019** at FLAGEY. [Please register](https://www.eventbrite.fr/e/equal-academy-tickets-53591135529#tickets).
