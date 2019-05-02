@@ -22,17 +22,17 @@ permalink: /{{ locale }}/index.html
             <p>Where do we draw the line between disobedience and insurrection, violence or even revolt? Is civil disobedience only a mode of action, or an end in itself?</p>
             <p>Is this mode of action capable of convincing public opinion, of transcending society’s disagreements to express a common will?</p>
           </div>
-
-          <img class="l-intro__image  o-fluidimg"
-               src="/img/protest_400.jpg"
-               srcset="/img/protest_400.jpg 400w,
-                       /img/protest_600.jpg 600w,
-                       /img/protest_800.jpg 800w"
-               sizes="(min-width: 1300px) 465px,
-                      (min-width: 750px) 33vw,
-                      100vw"
-               alt="Protest">
-
+          <div class="l-intro__image">
+            <img class="o-fluidimg"
+                src="/img/protest_400.jpg"
+                srcset="/img/protest_400.jpg 400w,
+                        /img/protest_600.jpg 600w,
+                        /img/protest_800.jpg 800w"
+                sizes="(min-width: 1300px) 465px,
+                        (min-width: 750px) 33vw,
+                        100vw"
+                alt="Protest">
+          </div>
         </div>
       </section>
 
@@ -111,7 +111,7 @@ permalink: /{{ locale }}/index.html
             {# get speakers #}
             {% for speaker in speakers %}
               {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
-                <li>
+                <li class="l-grid__unit">
 
                   <article class="c-speaker">
                     <a class="c-speaker__link" href="{{ speaker[locale].url }}">

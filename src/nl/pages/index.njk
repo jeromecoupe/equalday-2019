@@ -23,17 +23,17 @@ permalink: /{{ locale }}/index.html
             <p>Wat is de grens tussen ongehoorzaamheid en opstand, geweld of zelfs revolte? Is burgerlijke ongehoorzaamheid slechts een actiemiddel of een doel op zich?</p>
             <p>Kan deze handelwijze de publieke opinie voor zich winnen, de maatschappelijke onenigheid overstijgen en een gemeenschappelijke wil tot uitdrukking brengen?</p>
           </div>
-
-          <img class="l-intro__image  o-fluidimg"
-               src="/img/protest_400.jpg"
-               srcset="/img/protest_400.jpg 400w,
-                       /img/protest_600.jpg 600w,
-                       /img/protest_800.jpg 800w"
-               sizes="(min-width: 1300px) 465px,
-                      (min-width: 750px) 33vw,
-                      100vw"
-               alt="Manifestatie">
-
+          <div class="l-intro__image">
+            <img class="o-fluidimg"
+                src="/img/protest_400.jpg"
+                srcset="/img/protest_400.jpg 400w,
+                        /img/protest_600.jpg 600w,
+                        /img/protest_800.jpg 800w"
+                sizes="(min-width: 1300px) 465px,
+                        (min-width: 750px) 33vw,
+                        100vw"
+                alt="Manifestatie">
+          </div>
         </div>
       </section>
 
@@ -112,7 +112,7 @@ permalink: /{{ locale }}/index.html
             {# Get speakers #}
             {% for speaker in speakers %}
               {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
-                <li>
+                <li class="l-grid__unit">
 
                   <article class="c-speaker">
                     <a class="c-speaker__link" href="{{ speaker[locale].url }}">

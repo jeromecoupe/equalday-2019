@@ -22,17 +22,17 @@ permalink: index.html
             <p>Quelle frontière tracer entre désobéissance et insurrection, violence, ou encore révolte ? La désobéissance civile n’est-elle qu’un moyen d’action, ou une fin en soi ?</p>
             <p>Ce mode d’action est-il à même de convaincre l’opinion publique, de transcender les désaccords de la société pour exprimer une volonté commune ?</p>
           </div>
-
-          <img class="l-intro__image  o-fluidimg"
-               src="/img/protest_400.jpg"
-               srcset="/img/protest_400.jpg 400w,
-                       /img/protest_600.jpg 600w,
-                       /img/protest_800.jpg 800w"
-               sizes="(min-width: 1300px) 465px,
-                      (min-width: 750px) 33vw,
-                      100vw"
-               alt="Manifestant tenant un feu de bengale">
-
+          <div class="l-intro__image">
+            <img class="o-fluidimg"
+                src="/img/protest_400.jpg"
+                srcset="/img/protest_400.jpg 400w,
+                        /img/protest_600.jpg 600w,
+                        /img/protest_800.jpg 800w"
+                sizes="(min-width: 1300px) 465px,
+                        (min-width: 750px) 33vw,
+                        100vw"
+                alt="Manifestant tenant un feu de bengale">
+          </div>
         </div>
       </section>
 
@@ -111,7 +111,7 @@ permalink: index.html
             {# Get speakers #}
             {% for speaker in speakers %}
               {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
-                <li>
+                <li class="l-grid__unit">
 
                   <article class="c-speaker">
                     <a class="c-speaker__link" href="{{ speaker[locale].url }}">
