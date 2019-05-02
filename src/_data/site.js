@@ -3,9 +3,9 @@ module.exports = {
   baseUrl: "https://www.equalday.eu",
   name: "EQUAL Day 2019",
   en: {
-    metaTitle: "EN -- EQUAL Day 2019 - Droit et|ou désobéissance civile",
+    metaTitle: "EQUAL Day 2019 - Law and|or Civil Disobedience",
     metaDescription:
-      "EN -- La désobéissance civile soulève un nombre important d’interrogations fondamentales que nous souhaitons explorer ensemble."
+      "Civil Disobedience raises a number of important fundamental questions, which we would like to explore with you."
   },
   fr: {
     metaTitle: "EQUAL Day 2019 - Droit et|ou désobéissance civile",
@@ -13,8 +13,8 @@ module.exports = {
       "La désobéissance civile soulève un nombre important d’interrogations fondamentales que nous souhaitons explorer ensemble."
   },
   nl: {
-    metaTitle: "NL -- EQUAL Day 2019 - Droit et|ou désobéissance civile",
+    metaTitle: "EQUAL Day 2019 - Recht en|of burgerlijke ongehoorzaamheid",
     metaDescription:
-      "NL -- La désobéissance civile soulève un nombre important d’interrogations fondamentales que nous souhaitons explorer ensemble."
+      "Burgerlijke ongehoorzaamheid is een handelswijze die heel wat fundamentele vragen oproept. Samen met u willen we die graag onderzoeken."
   }
 };
