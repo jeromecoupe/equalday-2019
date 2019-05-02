@@ -36,6 +36,6 @@ module.exports = {
     transportsParking: "Parking available",
     transportsSTIB: "Website STIB",
     legalLabel: "Terms and conditions",
-    legalDoc: "legal_conditions_fr.pdf"
+    legalDoc: "legal_conditions_en.pdf"
   }
 };
