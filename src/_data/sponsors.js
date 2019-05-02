@@ -6,8 +6,13 @@ const sponsors = [
   },
   {
     company: "Major Tom Company",
-    url: "http://major-tom-company.eu/",
+    url: "http://major-tom-company.eu",
     logo: "major_tom_logo.png"
+  },
+  {
+    company: "Equal Academy",
+    url: "https://equal-academy.eu",
+    logo: "equal_academy_logo.png"
   }
 ];
 
