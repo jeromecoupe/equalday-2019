@@ -1,6 +1,40 @@
 // --------------------------------------------
-// =layout for the programme
+// =layout for the programme (GRID)
 // --------------------------------------------
+
+.l-programme {
+  @include mq(medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.l-programme__title {
+  @include mq(medium) {
+    width: 80px;
+  }
+}
+
+.l-programme__content {
+  @include mq(medium) {
+    width: calc(100% - 80px - 36px);
+  }
+}
+
+// --------------------------------------------
+// =layout for the programme (GRID)
+// --------------------------------------------
+
+@supports (display: grid) {
+  .l-programme__title,
+  .l-programme__content {
+    @include mq(medium) {
+      width: auto;
+    }
+  }
+}
 
 .l-programme {
   @include mq(medium) {

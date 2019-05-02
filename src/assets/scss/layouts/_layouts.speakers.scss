@@ -1,6 +1,40 @@
 // --------------------------------------------
-// =layout for the speakers
+// =layout for the speakers (Flexbox)
 // --------------------------------------------
+
+.l-speakers {
+  @include mq(medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.l-speakers__title {
+  @include mq(medium) {
+    width: 100px;
+  }
+}
+
+.l-speakers__content {
+  @include mq(medium) {
+    width: calc(100% - 100px - 36px);
+  }
+}
+
+// --------------------------------------------
+// =layout for the speakers (GRID)
+// --------------------------------------------
+
+@supports (display: grid) {
+  .l-speakers__title,
+  .l-speakers__content {
+    @include mq(medium) {
+      width: auto;
+    }
+  }
+}
 
 .l-speakers {
   @include mq(medium) {
