@@ -38,6 +38,43 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // speakers collections
+  eleventyConfig.addCollection("speakers_fr", function(collection) {
+    return collection
+      .getFilteredByGlob("./src/fr/speakers/*.md")
+      .sort((a, b) => {
+        let nameA = a.data.surname.toUpperCase();
+        let nameB = b.data.surname.toUpperCase();
+        if (nameA > b.nameB) return -1;
+        else if (nameA < nameB) return 1;
+        else return 0;
+      });
+  });
+
+  eleventyConfig.addCollection("speakers_en", function(collection) {
+    return collection
+      .getFilteredByGlob("./src/en/speakers/*.md")
+      .sort((a, b) => {
+        let nameA = a.data.surname.toUpperCase();
+        let nameB = b.data.surname.toUpperCase();
+        if (nameA > b.nameB) return -1;
+        else if (nameA < nameB) return 1;
+        else return 0;
+      });
+  });
+
+  eleventyConfig.addCollection("speakers_nl", function(collection) {
+    return collection
+      .getFilteredByGlob("./src/nl/speakers/*.md")
+      .sort((a, b) => {
+        let nameA = a.data.surname.toUpperCase();
+        let nameB = b.data.surname.toUpperCase();
+        if (nameA > b.nameB) return -1;
+        else if (nameA < nameB) return 1;
+        else return 0;
+      });
+  });
+
   // alerts collections
   eleventyConfig.addCollection("alerts_fr", function(collection) {
     return collection.getFilteredByGlob("./src/fr/alerts/*.md").filter(item => {
