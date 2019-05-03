@@ -109,15 +109,15 @@ permalink: /{{ locale }}/index.html
           <div class="l-speakers__content">
 
             {# get speakers #}
-            {% for speaker in speakers %}
+            {% for speaker in collections.speakers_en %}
               {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
                 <li class="l-grid__unit">
 
                   <article class="c-speaker">
-                    <a class="c-speaker__link" href="{{ speaker[locale].url }}">
-                      <p class="c-speaker__image-wrapper"><img src="/img/speakers/{{ speaker.picture }}" class="c-speaker__image  o-fluidimg" alt="{{ speaker.name }} {{ speaker.surname }}"></p>
-                      <h3 class="c-speaker__name">{{ speaker.name }} {{ speaker.surname }}</h3>
-                      <p class="c-speaker__function">{{ speaker[locale].function }}</p>
+                    <a class="c-speaker__link" href="{{ speaker.data.url }}">
+                      <p class="c-speaker__image-wrapper"><img src="/img/speakers/{{ speaker.data.picture }}" class="c-speaker__image  o-fluidimg" alt="{{ speaker.data.name }} {{ speaker.data.surname }}"></p>
+                      <h3 class="c-speaker__name">{{ speaker.data.name }} {{ speaker.data.surname }}</h3>
+                      <p class="c-speaker__function">{{ speaker.data.function }}</p>
                     </a>
                   </article>
 
