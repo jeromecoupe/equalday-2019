@@ -17,24 +17,24 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("events_fr", function(collection) {
     return collection.getFilteredByGlob("./src/fr/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
-      else if (a.data.startDate < b.data.startDate) return 1;
-      else return 0;
+      if (a.data.startDate < b.data.startDate) return 1;
+      return 0;
     });
   });
 
   eleventyConfig.addCollection("events_en", function(collection) {
     return collection.getFilteredByGlob("./src/en/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
-      else if (a.data.startDate < b.data.startDate) return 1;
-      else return 0;
+      if (a.data.startDate < b.data.startDate) return 1;
+      return 0;
     });
   });
 
   eleventyConfig.addCollection("events_nl", function(collection) {
     return collection.getFilteredByGlob("./src/nl/events/*.md").sort((a, b) => {
       if (a.data.startDate > b.data.startDate) return -1;
-      else if (a.data.startDate < b.data.startDate) return 1;
-      else return 0;
+      if (a.data.startDate < b.data.startDate) return 1;
+      return 0;
     });
   });
 
@@ -45,9 +45,9 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => {
         let nameA = a.data.surname.toUpperCase();
         let nameB = b.data.surname.toUpperCase();
-        if (nameA > b.nameB) return -1;
-        else if (nameA < nameB) return 1;
-        else return 0;
+        if (nameA < nameB) return -1;
+        if (nameA > nameB) return 1;
+        return 0;
       });
   });
 
@@ -57,9 +57,9 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => {
         let nameA = a.data.surname.toUpperCase();
         let nameB = b.data.surname.toUpperCase();
-        if (nameA > b.nameB) return -1;
-        else if (nameA < nameB) return 1;
-        else return 0;
+        if (nameA < nameB) return -1;
+        if (nameA > nameB) return 1;
+        return 0;
       });
   });
 
@@ -69,9 +69,9 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => {
         let nameA = a.data.surname.toUpperCase();
         let nameB = b.data.surname.toUpperCase();
-        if (nameA > b.nameB) return -1;
-        else if (nameA < nameB) return 1;
-        else return 0;
+        if (nameA < nameB) return -1;
+        if (nameA > nameB) return 1;
+        return 0;
       });
   });
 
@@ -79,39 +79,24 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("alerts_fr", function(collection) {
     return collection.getFilteredByGlob("./src/fr/alerts/*.md").filter(item => {
       let today = moment().format("YYYYMMDD");
-      let expiry;
-      if (!item.data.expiryDate || item.data.expiryDate == "") {
-        expiry = today;
-      } else {
-        expiry = moment(item.data.expiryDate).format("YYYYMMDD");
-      }
-      return expiry >= today;
+      let expiryDate = moment(item.data.expiryDate).format("YYYYMMDD");
+      return expiryDate >= today;
     });
   });
 
   eleventyConfig.addCollection("alerts_en", function(collection) {
     return collection.getFilteredByGlob("./src/en/alerts/*.md").filter(item => {
       let today = moment().format("YYYYMMDD");
-      let expiry;
-      if (!item.data.expiryDate || item.data.expiryDate == "") {
-        expiry = today;
-      } else {
-        expiry = moment(item.data.expiryDate).format("YYYYMMDD");
-      }
-      return expiry >= today;
+      let expiryDate = moment(item.data.expiryDate).format("YYYYMMDD");
+      return expiryDate >= today;
     });
   });
 
   eleventyConfig.addCollection("alerts_nl", function(collection) {
     return collection.getFilteredByGlob("./src/nl/alerts/*.md").filter(item => {
       let today = moment().format("YYYYMMDD");
-      let expiry;
-      if (!item.data.expiryDate || item.data.expiryDate == "") {
-        expiry = today;
-      } else {
-        expiry = moment(item.data.expiryDate).format("YYYYMMDD");
-      }
-      return expiry >= today;
+      let expiryDate = moment(item.data.expiryDate).format("YYYYMMDD");
+      return expiryDate >= today;
     });
   });
 
