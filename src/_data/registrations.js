@@ -1,15 +1,19 @@
 module.exports = {
-  active: false,
+  active: true,
   fr: {
     registrationsLabel: "Réservations",
-    registrationsUrl: "https://www.equal-partners.eu/"
+    registrationsIntro:
+      "Participation libre et consciente. Estimez le prix de votre participation avec un minimum de 2€ (sans repas) ou de 5€ (avec repas). A titre indicatif, nous investissons environ 50&nbsp;&euro; par participant. Contactez-nous par email si vous ne souhaitez pas payer en ligne.",
+    registrationsUrl: "https://www.weezevent.com/equal-day-2019"
   },
   nl: {
     registrationsLabel: "Tickets",
-    registrationsUrl: "https://www.equal-partners.eu/nl/"
+    registrationsIntro: "",
+    registrationsUrl: "https://www.weezevent.com/equal-day-2019"
   },
   en: {
     registrationsLabel: "Register",
-    registrationsUrl: "https://www.equal-partners.eu/en/"
+    registrationsIntro: "",
+    registrationsUrl: "https://www.weezevent.com/equal-day-2019"
   }
 };
