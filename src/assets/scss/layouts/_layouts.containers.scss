@@ -19,16 +19,5 @@
 }
 
 .l-container--narrow {
-  padding-left: 10%;
-  padding-right: 10%;
-
-  @include mq(large) {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  @include mq(xlarge) {
-    padding-left: 30%;
-    padding-right: 30%;
-  }
+  max-width: 900px;
 }
