@@ -36,6 +36,7 @@
 }
 
 .c-event__location {
+  margin-top: pxtorem(12px) * -1;
   margin-bottom: 0;
   color: $color-gray4;
 }

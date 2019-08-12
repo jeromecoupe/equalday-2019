@@ -98,6 +98,20 @@ permalink: /{{ locale }}/index.html
         </div>
       </section>
       {% endif %}
+
+      {# add register button #}
+      {% if registrations.active === true %}
+        <section class="c-pagesection__body">
+          <div class="l-container  l-container--narrow  u-text-center">
+
+            <p><a class="c-button" href="{{ registrations[locale].registrationsUrl }}">{{ registrations[locale].registrationsLabel }}</a></p>
+            {% if registrations[locale].registrationsIntro %}
+              <p>{{ registrations[locale].registrationsIntro }}</p>
+            {% endif %}
+
+          </div>
+        </section>
+      {% endif %}
     </div>
 
     <div class="c-pagesection  c-pagesection--light">
