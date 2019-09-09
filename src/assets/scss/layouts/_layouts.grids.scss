@@ -21,6 +21,7 @@ $breakpoints-map: (
 ) !default;
 
 $grid-gap: pxtorem(36px) !default;
+$grid-gap-large: pxtorem(42px) !default;
 
 // -------------------------------------
 // Base flexbox classes
@@ -46,6 +47,10 @@ $grid-gap: pxtorem(36px) !default;
   width: 100%;
 }
 
+.l-grid--lgap > .l-grid__unit {
+  padding-left: $grid-gap-large;
+}
+
 .l-grid--2cols > .l-grid__unit {
   width: 50%;
 }
@@ -68,6 +73,10 @@ $grid-gap: pxtorem(36px) !default;
     gap: $grid-gap;
   }
 
+  .l-grid--lgap {
+    gap: $grid-gap-large;
+  }
+
   .l-grid--2cols {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -85,7 +94,8 @@ $grid-gap: pxtorem(36px) !default;
     margin-left: 0;
   }
 
-  .l-grid__unit {
+  .l-grid__unit,
+  .l-grid--lgap > .l-grid__unit {
     margin-bottom: 0;
     padding-left: 0;
   }

@@ -46,7 +46,7 @@
 
   @include mq(large) {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "t c c c c c c .";
+    grid-template-areas: "t c c c c c c c";
   }
 }
 
