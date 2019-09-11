@@ -21,7 +21,7 @@ $breakpoints-map: (
 ) !default;
 
 $grid-gap: pxtorem(36px) !default;
-$grid-gap-large: pxtorem(42px) !default;
+$grid-gap-large: pxtorem(48px) !default;
 
 // -------------------------------------
 // Base flexbox classes
@@ -38,6 +38,10 @@ $grid-gap-large: pxtorem(42px) !default;
   flex-wrap: wrap;
 
   margin-left: ($grid-gap * -1);
+}
+
+.l-grid--lgap {
+  margin-left: ($grid-gap-large * -1);
 }
 
 .l-grid__unit {

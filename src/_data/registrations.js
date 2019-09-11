@@ -8,12 +8,14 @@ module.exports = {
   },
   nl: {
     registrationsLabel: "Tickets",
-    registrationsIntro: "",
+    registrationsIntro:
+      "We ask you to estimate the price you are wiling to pay to attend. The minimum is 2€ (without supper) or 5€ (supper included). To give you an idea, we invest about 50&euro; per participant. Contact us by email if you do not wish to pay online.",
     registrationsUrl: "https://www.weezevent.com/equal-day-2019"
   },
   en: {
     registrationsLabel: "Register",
-    registrationsIntro: "",
+    registrationsIntro:
+      "We ask you to estimate the price you are wiling to pay to attend. The minimum is 2€ (without supper) or 5€ (supper included). To give you an idea, we invest about 50&euro; per participant. Contact us by email if you do not wish to pay online.",
     registrationsUrl: "https://www.weezevent.com/equal-day-2019"
   }
 };
