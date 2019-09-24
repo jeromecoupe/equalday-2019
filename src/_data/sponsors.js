@@ -20,6 +20,11 @@ const sponsors = [
     logo: "major_tom_logo.jpg"
   },
   {
+    company: "Pop Pot",
+    url: "http://www.pop-pot.com/",
+    logo: "pop_pot_logo.jpg"
+  },
+  {
     company: "Equal Academy",
     url: "https://equal-academy.eu",
     logo: "equal_academy_logo.jpg"
