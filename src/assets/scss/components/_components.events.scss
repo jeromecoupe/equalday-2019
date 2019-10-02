@@ -35,6 +35,18 @@
   }
 }
 
+.c-event__body {
+  & a {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: $color-brand2;
+    text-decoration: none;
+  }
+}
+
 .c-event__location {
   margin-top: pxtorem(12px) * -1;
   margin-bottom: 0;

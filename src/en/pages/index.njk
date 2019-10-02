@@ -84,7 +84,9 @@ permalink: /{{ locale }}/index.html
                       <time datetime="{{ event.data.endDate|date('YYYY-MM-DDTHH:mm') }}">{{ event.data.endDate|date("HH[h]mm", locale) }}</time>
                     </p>
                     <h3 class="c-event__title">{{ event.data.title }}</h3>
-                    {{ event.templateContent | safe }}
+                    <div class="c-event__body">
+                      {{ event.templateContent | safe }}
+                    </div>
                     <p class="c-event__location">{{ event.data.location }}</p>
                   </article>
 
