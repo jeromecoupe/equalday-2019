@@ -63,6 +63,11 @@ const sponsors = [
     company: "The Valley",
     url: "https://www.facebook.com/THEVALLEY.ROYA/",
     logo: "thevalley_logo.jpg"
+  },
+  {
+    company: "Action non-violente COP21",
+    url: "https://www.facebook.com/anvcop21/",
+    logo: "anv_cop21_logo.jpg"
   }
 ];
 
