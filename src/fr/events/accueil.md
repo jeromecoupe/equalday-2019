@@ -5,4 +5,4 @@ title: "Accueil et inscriptions"
 type: "Accueil"
 location: "Flagey - Ground Lobby"
 ---
-On vous accueille à Flagey pour la deuxièmme édition de l'EQUAL Day 2019 consacré à la désobéissance. Si vous ne vous êtes pas enregistrés en ligne, pas de panique ... vous êtes les bienvenus. Nous nous ferons un plaisir de vous inscrire sur place.
+On vous accueille à Flagey pour la deuxième édition de l'EQUAL Day 2019 consacré à la désobéissance. Si vous ne vous êtes pas enregistrés en ligne, pas de panique ... vous êtes les bienvenus. Nous nous ferons un plaisir de vous inscrire sur place.
