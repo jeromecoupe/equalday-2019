@@ -1,7 +1,7 @@
 ---
-name: "Caroline"
+name: "Pauline"
 surname: "Forges"
-function: "Animatrice - Quinoa"
+function: "Animator - Quinoa"
 url: "http://www.quinoa.be"
 picture: "caroline_forges_600.jpg"
 ---
