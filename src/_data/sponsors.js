@@ -93,6 +93,11 @@ const sponsors = [
     name: "Dezobeyi",
     url: "http://www.quinoa.be/je-minforme-3/outils-pedagogiques/desobeir-un-acte-citoyen/",
     logo: "dezobeyi_logo.jpg"
+  },
+  {
+    name: "Génération Climat",
+    url: "http://www.generation-climat.org/",
+    logo: "generation_climat_int_logo.jpg"
   }
 ];
 
