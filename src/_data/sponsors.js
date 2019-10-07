@@ -31,7 +31,8 @@ const sponsors = [
   },
   {
     name: "Brussels Airlines Stop Deportations",
-    url: "https://www.facebook.com/pages/category/Cause/Brussels-Airlines-Stop-Deportations-2341425242795496/",
+    url:
+      "https://www.facebook.com/pages/category/Cause/Brussels-Airlines-Stop-Deportations-2341425242795496/",
     logo: "brussels_airlines_stop_deportations_logo.jpg"
   },
   {
@@ -46,7 +47,8 @@ const sponsors = [
   },
   {
     name: "Groupe Anathème",
-    url: "https://www.facebook.com/pg/Groupe-Anath%C3%A8me-147551349173740/about/?ref=page_internal",
+    url:
+      "https://www.facebook.com/pg/Groupe-Anath%C3%A8me-147551349173740/about/?ref=page_internal",
     logo: "groupe_anatheme_logo.jpg"
   },
   {
@@ -91,7 +93,8 @@ const sponsors = [
   },
   {
     name: "Dezobeyi",
-    url: "http://www.quinoa.be/je-minforme-3/outils-pedagogiques/desobeir-un-acte-citoyen/",
+    url:
+      "http://www.quinoa.be/je-minforme-3/outils-pedagogiques/desobeir-un-acte-citoyen/",
     logo: "dezobeyi_logo.jpg"
   },
   {
@@ -108,6 +111,11 @@ const sponsors = [
     name: "BXL Refugees",
     url: "http://www.bxlrefugees.be/",
     logo: "bxl_refugees_logo.jpg"
+  },
+  {
+    name: "Avocats.be",
+    url: "https://avocats.be/",
+    logo: "avocatsbe_logo.jpg"
   }
 ];
 
