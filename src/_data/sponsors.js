@@ -98,6 +98,16 @@ const sponsors = [
     name: "Génération Climat",
     url: "http://www.generation-climat.org/",
     logo: "generation_climat_int_logo.jpg"
+  },
+  {
+    name: "Youth for Climate",
+    url: "https://youth4climate.be/fr-BE/",
+    logo: "youth_for_climate_logo.jpg"
+  },
+  {
+    name: "BXL Refugees",
+    url: "http://www.bxlrefugees.be/",
+    logo: "bxl_refugees_logo.jpg"
   }
 ];
 
