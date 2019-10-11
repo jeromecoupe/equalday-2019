@@ -5,4 +5,4 @@ title: "Lancez-vous! Lançons-nous!"
 type: "Introduction"
 location: "Flagey - Studio 1"
 ---
-Nous commencerons la journée par quelques notions importantes: principes de base, techniques utilisées, contexte historique et politique, liens avec la notion d'état de droit, désobéissance violente ou pacifique, individuelle ou collective, etc. Avec Thomas Deridder, Manuela Cadelli, Alain Eraly, Olivier Stein et Stéphanie Demblon.
+Nous commencerons la journée par quelques notions importantes: principes de base, techniques utilisées, contexte historique et politique, liens avec la notion d'état de droit, désobéissance violente ou pacifique, individuelle ou collective, etc. Avec Thomas Deridder, Manuela Cadelli, Alain Eraly, Olivier Stein, Amaury Ghijselings et Stéphanie Demblon.
