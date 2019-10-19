@@ -1,5 +1,5 @@
 module.exports = {
-  active: true,
+  active: false,
   fr: {
     registrationsLabel: "Réservations",
     registrationsIntro:
