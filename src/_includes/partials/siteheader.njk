@@ -4,11 +4,7 @@
     <div class="c-siteheader__navbar">
       <p class="c-siteheader__logo"><a href="{{ languages[locale].homeUrl }}">{% include "svg/logo.svg" %}</a></p>
       <nav class="c-siteheader__lggnav">
-        {% for lgg in languages %}
-          {% if loop.first %}<ul class="c-lggnav">{% endif %}
-            <li class="c-lggnav__item"><a class="c-lggnav__link  {{ 'is-active' if lgg.code === locale }}" href="{{ lgg.homeUrl }}">{{ lgg.label }}</a></li>
-          {% if loop.last %}</ul>{% endif %}
-        {% endfor %}
+        {% include "partials/languages-nav.njk" %}
       </nav>
     </div>
 
