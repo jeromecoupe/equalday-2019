@@ -64,12 +64,12 @@ permalink: /{{ locale }}/index.html
       {# check if events #}
       {% if collections.events_nl | length %}
       <section class="c-pagesection__body">
-        <div class="l-container  l-programme">
+        <div class="l-container  l-split">
 
-          <div class="l-programme__title">
+          <div class="l-split__title">
             <h2 class="c-vtitle">Programme</h2>
           </div>
-          <div class="l-programme__content">
+          <div class="l-split__content">
 
             {# Get events #}
             {% for event in collections.events_nl | reverse %}
@@ -118,12 +118,12 @@ permalink: /{{ locale }}/index.html
 
     <div class="c-pagesection  c-pagesection--light">
       <section class="c-pagesection__body">
-        <div class="l-container  l-speakers">
+        <div class="l-container  l-split  l-split--reverse">
 
-          <div class="l-speakers__title">
+          <div class="l-split__title">
             <h2 class="c-vtitle  c-vtitle--dark">Participants</h2>
           </div>
-          <div class="l-speakers__content">
+          <div class="l-split__content">
 
             {# Get speakers #}
             {% for speaker in collections.speakers_nl %}

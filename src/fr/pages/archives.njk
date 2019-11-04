@@ -1,0 +1,82 @@
+---
+permalink: archives/index.html
+---
+
+{% extends "layouts/base.njk" %}
+{% set metaTitle = site[locale].metaTitle %}
+{% set metaDescription = site[locale].metaDescription %}
+
+{% block content %}
+  <main>
+
+    <div class="c-pagesection">
+
+      <section class="c-pagesection__body">
+        <div class="l-container  l-split">
+
+          <div class="l-split__title">
+            <h2 class="c-vtitle">Videos</h2>
+          </div>
+          <div class="l-split__content">
+
+            <ul class="l-grid  l-grid--2cols@medium">
+              <li>
+                <div class="o-fluidvideo">
+                  <iframe src="https://player.vimeo.com/video/369807061"></iframe>
+                </div>
+              </li>
+              <li>
+                <div class="o-fluidvideo">
+                  <iframe src="https://player.vimeo.com/video/369809688"></iframe>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <div class="c-pagesection  c-pagesection--light">
+
+      <section class="c-pagesection__body">
+        <div class="l-container  l-split  l-split--reverse">
+
+          <div class="l-split__title">
+            <h2 class="c-vtitle  c-vtitle--dark">Sketchnotes</h2>
+          </div>
+          <div class="l-split__content">
+            <ul class="l-grid  l-grid--3cols@medium">
+              <li>
+                <article class="c-sketchnote">
+                  <a class="c-sketchnote__link" href="/img/sketchnotes/disobedience_1500.jpg">
+                    <img class="o-fluidimg" src="/img/sketchnotes/disobedience_800.jpg" alt="Sketchnotes disobedience">
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article class="c-sketchnote">
+                  <a class="c-sketchnote__link" href="/img/sketchnotes/co-construction_1500.jpg">
+                    <img class="o-fluidimg" src="/img/sketchnotes/co-construction_800.jpg" alt="Sketchnotes disobedience">
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article class="c-sketchnote">
+                  <a class="c-sketchnote__link" href="/img/sketchnotes/testimonials_1500.jpg">
+                    <img class="o-fluidimg" src="/img/sketchnotes/testimonials_800.jpg" alt="Sketchnotes disobedience">
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+{% endblock %}
