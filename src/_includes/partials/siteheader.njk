@@ -2,13 +2,13 @@
   <div class="l-container">
 
     <div class="c-siteheader__navbar">
-      <p class="c-siteheader__logo">{% include "svg/logo.svg" %}</p>
+      <p class="c-siteheader__logo"><a href="{{ languages[locale].homeUrl }}">{% include "svg/logo.svg" %}</a></p>
       <nav class="c-siteheader__lggnav">
-        <ul class="c-lggnav">
-          <li class="c-lggnav__item"><a class="c-lggnav__link  {% if locale == 'fr' %}is-active{% endif %}" href="/">FR</a></li>
-          <li class="c-lggnav__item"><a class="c-lggnav__link  {% if locale == 'en' %}is-active{% endif %}" href="/en/">EN</a></li>
-          <li class="c-lggnav__item"><a class="c-lggnav__link  {% if locale == 'nl' %}is-active{% endif %}" href="/nl/">NL</a></li>
-        </ul>
+        {% for lgg in languages %}
+          {% if loop.first %}<ul class="c-lggnav">{% endif %}
+            <li class="c-lggnav__item"><a class="c-lggnav__link  {{ 'is-active' if lgg.code === locale }}" href="{{ lgg.homeUrl }}">{{ lgg.label }}</a></li>
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
       </nav>
     </div>
 

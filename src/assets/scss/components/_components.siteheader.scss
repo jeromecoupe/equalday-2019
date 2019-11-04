@@ -66,7 +66,11 @@
   margin: 0;
   padding: 0;
 
-  & > svg {
+  & > a {
+    display: inline-block;
+  }
+
+  & svg {
     vertical-align: middle;
     width: 42px;
     height: 42px;
