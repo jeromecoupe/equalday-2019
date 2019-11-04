@@ -100,6 +100,18 @@ permalink: /{{ locale }}/index.html
       </section>
       {% endif %}
 
+      {# archives #}
+      {% if archives.active === true %}
+        <div class="c-pagesection__body">
+          <div class="l-container  l-container--narrower  u-text-center">
+
+            <p><a class="c-button" href="{{ archives[locale].url }}">{{ archives[locale].label }}</a></p>
+            {% if archives[locale].text %}<p>{{ archives[locale].text | safe }}</p>{% endif %}
+
+          </div>
+        </div>
+      {% endif %}
+
       {# add register button #}
       {% if registrations.active === true %}
         <section class="c-pagesection__body">
