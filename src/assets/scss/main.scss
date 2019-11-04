@@ -15,13 +15,13 @@
 @import "base/_base.links.scss";
 
 @import "objects/_objects.fluid-images.scss";
+@import "objects/_objects.fluid-videos.scss";
 
 @import "layouts/_layouts.containers.scss";
 @import "layouts/_layouts.intro.scss";
-@import "layouts/_layouts.programme.scss";
-@import "layouts/_layouts.speakers.scss";
 @import "layouts/_layouts.grids.scss";
 @import "layouts/_layouts.alerts.scss";
+@import "layouts/_layouts.split.scss";
 
 @import "components/_components.lggnav.scss";
 @import "components/_components.siteheader.scss";
@@ -31,6 +31,7 @@
 @import "components/_components.textintros.scss";
 @import "components/_components.events.scss";
 @import "components/_components.speakers.scss";
+@import "components/_components.sketchnotes.scss";
 @import "components/_components.sponsors.scss";
 @import "components/_components.lists.scss";
 @import "components/_components.socialmedia.scss";

@@ -1,0 +1,13 @@
+// --------------------------------------------
+// =sketchnotes
+// --------------------------------------------
+
+.c-sketchnote__link {
+  display: inline-block;
+  border: 1px solid $color-gray1;
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover {
+    border-color: $color-brand1;
+  }
+}

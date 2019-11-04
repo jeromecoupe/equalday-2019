@@ -1,53 +1,6 @@
 // --------------------------------------------
-// =layout for the intro (FLEXBOX)
-// --------------------------------------------
-
-.l-intro {
-  @include mq(medium) {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-}
-
-.l-intro__content {
-  @include mq(medium) {
-    width: calc(70% - 36px);
-  }
-
-  @include mq(large) {
-    width: calc(60% - 36px);
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-}
-
-.l-intro__image {
-  @include mq(medium) {
-    width: 30%;
-  }
-
-  @include mq(large) {
-    width: 40%;
-  }
-}
-
-// --------------------------------------------
 // =layout for the intro (GRID)
 // --------------------------------------------
-
-@supports (display: grid) {
-  .l-intro__content,
-  .l-intro__image {
-    width: auto;
-  }
-
-  .l-intro__content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 .l-intro {
   @include mq(medium) {

@@ -63,12 +63,12 @@ permalink: index.html
       {# check if events #}
       {% if collections.events_fr | length %}
         <section class="c-pagesection__body">
-          <div class="l-container  l-programme">
+          <div class="l-container  l-split">
 
-            <div class="l-programme__title">
+            <div class="l-split__title">
               <h2 class="c-vtitle">Programme</h2>
             </div>
-            <div class="l-programme__content">
+            <div class="l-split__content">
 
               {# Get events #}
               {% for event in collections.events_fr | reverse %}
@@ -100,9 +100,22 @@ permalink: index.html
         </section>
       {% endif %}
 
+      {# archives #}
+      {% if archives.active === true %}
+        <div class="c-pagesection__body">
+          <div class="l-container  l-container--narrow  u-text-center">
+
+            <p><a class="c-button" href="{{ archives[locale].url }}">{{ archives[locale].label }}</a></p>
+            <p>{{ archives[locale].text }}</p>
+
+          </div>
+        </div>
+      {% endif %}
+
+
       {# add register button #}
       {% if registrations.active === true %}
-        <section class="c-pagesection__body">
+        <div class="c-pagesection__body">
           <div class="l-container  l-container--narrow  u-text-center">
 
             <p><a class="c-button" href="{{ registrations[locale].registrationsUrl }}">{{ registrations[locale].registrationsLabel }}</a></p>
@@ -111,18 +124,18 @@ permalink: index.html
             {% endif %}
 
           </div>
-        </section>
+        </div>
       {% endif %}
     </div>
 
     <div class="c-pagesection  c-pagesection--light">
       <section class="c-pagesection__body">
-        <div class="l-container  l-speakers">
+        <div class="l-container  l-split  l-split--reverse">
 
-          <div class="l-speakers__title">
+          <div class="l-split__title">
             <h2 class="c-vtitle  c-vtitle--dark">Participants</h2>
           </div>
-          <div class="l-speakers__content">
+          <div class="l-split__content">
 
             {# Get speakers #}
             {% for speaker in collections.speakers_fr %}

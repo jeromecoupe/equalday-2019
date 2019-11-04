@@ -1,0 +1,39 @@
+.l-split {
+  @include mq(medium) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "t c c c c c";
+    grid-gap: pxtorem(36px);
+  }
+
+  @include mq(large) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "t c c c c c c c";
+  }
+}
+
+.l-split--reverse {
+  @include mq(medium) {
+    grid-template-areas: "c c c c c t";
+  }
+
+  @include mq(large) {
+    grid-template-areas: "c c c c c c c t";
+  }
+
+  .l-split__title {
+    justify-self: flex-end;
+  }
+}
+
+.l-split__title {
+  @include mq(medium) {
+    grid-area: t;
+  }
+}
+
+.l-split__content {
+  @include mq(medium) {
+    grid-area: c;
+  }
+}
