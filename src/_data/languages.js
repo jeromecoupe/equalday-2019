@@ -1,7 +1,7 @@
 module.exports = {
   fr: {
     label: "fr",
-    homeUrl: "/"
+    homeUrl: "/fr/"
   },
   nl: {
     label: "nl",
