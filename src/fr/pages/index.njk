@@ -103,15 +103,14 @@ permalink: index.html
       {# archives #}
       {% if archives.active === true %}
         <div class="c-pagesection__body">
-          <div class="l-container  l-container--narrow  u-text-center">
+          <div class="l-container  l-container--narrower  u-text-center">
 
             <p><a class="c-button" href="{{ archives[locale].url }}">{{ archives[locale].label }}</a></p>
-            <p>{{ archives[locale].text }}</p>
+            {% if archives[locale].text %}<p>{{ archives[locale].text | safe }}</p>{% endif %}
 
           </div>
         </div>
       {% endif %}
-
 
       {# add register button #}
       {% if registrations.active === true %}
