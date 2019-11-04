@@ -1,0 +1,17 @@
+{% for localeId, language in languages %}
+  {# set translated URL to homepage #}
+  {% set translatedUrl = language.homeUrl %}
+
+  {# check if translated items exist in collections.all using translationKey #}
+  {% for item in collections.all %}
+    {% if item.data.translationKey == translationKey and item.data.locale == localeId %}
+      {% set translatedUrl = item.url %}
+    {% endif %}
+  {% endfor%}
+
+  {# output nav #}
+  {% if loop.first %}<ul class="c-lggnav">{% endif %}
+    <li class="c-lggnav__item"><a class="c-lggnav__link  {{ 'is-active' if localeId === locale }}" href="{{ translatedUrl }}">{{ language.label }}</a></li>
+  {% if loop.last %}</ul>{% endif %}
+
+{% endfor %}

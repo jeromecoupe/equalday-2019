@@ -1,17 +1,14 @@
-module.exports = [
-  {
+module.exports = {
+  fr: {
     label: "fr",
-    code: "fr",
-    homeUrl: "/fr/"
+    homeUrl: "/"
   },
-  {
+  nl: {
     label: "nl",
-    code: "nl",
     homeUrl: "/nl/"
   },
-  {
+  en: {
     label: "en",
-    code: "en",
     homeUrl: "/en/"
   }
-];
+};
