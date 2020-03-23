@@ -1,0 +1,10 @@
+---
+name: "Name of speaker"
+surname: "Surname of speaker"
+function: "Function of speaker"
+url: "https://twitter.com/speaker"
+picture: "amaury_ghijselings_600.jpg"
+---
+
+- url: should be full URL as they appear in your browser and should be publicly available. Can be Twitter, LinkedIn or Website
+- picture: just the filename and extension. Format: 600x600 JPEG. Stored in: /src/assets/img/speakers/
