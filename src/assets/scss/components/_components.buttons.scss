@@ -17,11 +17,11 @@
   text-decoration: none;
   letter-spacing: 1px;
 
-  background-color: $color-brand2;
+  background-color: $color-brand3;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: $color-brand3;
+    background-color: $color-brand2;
     text-decoration: none;
   }
 }
