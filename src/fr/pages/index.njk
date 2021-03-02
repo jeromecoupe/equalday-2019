@@ -32,6 +32,9 @@ translationKey: homePage
                 sizes="(min-width: 1300px) 465px,
                         (min-width: 750px) 33vw,
                         100vw"
+                loading="lazy"
+                width="800"
+                height="1066"
                 alt="Manifestant tenant un feu de bengale">
           </div>
         </div>
@@ -144,7 +147,7 @@ translationKey: homePage
 
                   <article class="c-speaker">
                     <a class="c-speaker__link" href="{{ speaker.data.url }}">
-                      <p class="c-speaker__image-wrapper"><img src="/img/speakers/{{ speaker.data.picture }}" class="c-speaker__image  o-fluidimg" alt="{{ speaker.data.name }} {{ speaker.data.surname }}"></p>
+                      <p class="c-speaker__image-wrapper"><img src="/img/speakers/{{ speaker.data.picture }}" class="c-speaker__image  o-fluidimg" alt="{{ speaker.data.name }} {{ speaker.data.surname }}" width="600" height="600" loading="lazy"></p>
                       <h3 class="c-speaker__name">{{ speaker.data.name }} {{ speaker.data.surname }}</h3>
                       <p class="c-speaker__function">{{ speaker.data.function }}</p>
                     </a>
@@ -168,7 +171,7 @@ translationKey: homePage
               <li class="c-sponsors__item">
 
                 <a class="c-sponsors__link" href="{{ sponsor.url }}">
-                  <img class="c-sponsors__logo  o-fluidimg" src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                  <img class="c-sponsors__logo  o-fluidimg" src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" width="400" height="225" loading="lazy">
                 </a>
 
               </li>
