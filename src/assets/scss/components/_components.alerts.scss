@@ -3,7 +3,7 @@
 // --------------------------------------------
 
 .c-alert {
-  padding: pxtorem(30px);
+  padding: calc(30 / 16 * 1rem);
   border-left: 3px solid $color-brand1;
   background-color: $color-gray7;
   color: $color-gray3;

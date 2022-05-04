@@ -13,13 +13,13 @@
   align-items: center;
   flex-wrap: wrap;
 
-  margin-left: pxtorem(36px * -1);
+  margin-left: calc((36 / 16 * 1rem) * -1);
 }
 
 .c-sponsors__item {
   box-sizing: border-box;
-  padding-left: pxtorem(36px);
-  margin-bottom: pxtorem(36px);
+  padding-left: calc(36 / 16 * 1rem);
+  margin-bottom: calc(36 / 16 * 1rem);
   width: 200px;
   flex: 0 1 auto;
 }

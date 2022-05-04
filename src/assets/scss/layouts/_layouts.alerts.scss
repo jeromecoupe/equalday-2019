@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: ". c c c c c c .";
-    grid-gap: pxtorem(36px);
+    grid-gap: calc(36 / 16 * 1rem);
   }
 }
 

@@ -48,35 +48,35 @@
 }
 
 .c-sitefooter__info {
-  padding-top: pxtorem(30px);
-  padding-bottom: pxtorem(30px);
+  padding-top: calc(30 / 16 * 1rem);
+  padding-bottom: calc(30 / 16 * 1rem);
 
   @include mq(medium) {
-    padding-top: pxtorem(42px);
-    padding-bottom: pxtorem(42px);
+    padding-top: calc(42 / 16 * 1rem);
+    padding-bottom: calc(42 / 16 * 1rem);
   }
 
   @include mq(large) {
     margin-left: 12%;
     margin-right: 12%;
-    padding-top: pxtorem(60px);
-    padding-bottom: pxtorem(60px);
+    padding-top: calc(60 / 16 * 1rem);
+    padding-bottom: calc(60 / 16 * 1rem);
   }
 }
 
 .c-sitefooter__end {
-  padding-top: pxtorem(18px);
-  padding-bottom: pxtorem(18px);
+  padding-top: calc(18 / 16 * 1rem);
+  padding-bottom: calc(18 / 16 * 1rem);
   border-top: 1px solid rgba($color-white, 0.1);
 
   @include mq(medium) {
-    padding-top: pxtorem(24px);
-    padding-bottom: pxtorem(24px);
+    padding-top: calc(24 / 16 * 1rem);
+    padding-bottom: calc(24 / 16 * 1rem);
   }
 
   @include mq(large) {
-    padding-top: pxtorem(36px);
-    padding-bottom: pxtorem(36px);
+    padding-top: calc(36 / 16 * 1rem);
+    padding-bottom: calc(36 / 16 * 1rem);
     justify-content: space-between;
   }
 }
@@ -85,7 +85,7 @@
   margin: 0;
   padding: 0;
 
-  font-size: pxtorem(12px);
+  font-size: calc(12 / 16 * 1rem);
   font-weight: 600;
   line-height: 1.5;
   text-transform: uppercase;

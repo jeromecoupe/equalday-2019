@@ -14,9 +14,9 @@
 }
 
 .c-vlist--xs > li:not(:last-child) {
-  margin-bottom: pxtorem(3px);
+  margin-bottom: calc(3 / 16 * 1rem);
 }
 
 .c-vlist--s > li:not(:last-child) {
-  margin-bottom: pxtorem(6px);
+  margin-bottom: calc(6 / 16 * 1rem);
 }

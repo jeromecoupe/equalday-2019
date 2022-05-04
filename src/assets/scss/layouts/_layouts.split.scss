@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "t c c c c c";
-    grid-gap: pxtorem(36px);
+    grid-gap: calc(36 / 16 * 1rem);
   }
 
   @include mq(large) {

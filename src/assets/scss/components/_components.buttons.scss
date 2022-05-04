@@ -4,12 +4,12 @@
 
 .c-button {
   display: inline-block;
-  padding: pxtorem(18px) pxtorem(36px);
+  padding: calc(18 / 16 * 1rem) calc(36 / 16 * 1rem);
   cursor: pointer;
   border: none;
 
   font-weight: 600;
-  font-size: pxtorem(13px);
+  font-size: calc(13 / 16 * 1rem);
   line-height: 1;
   font-family: $fontstack-main;
   color: $color-white;

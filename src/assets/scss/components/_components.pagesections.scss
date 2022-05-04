@@ -9,18 +9,18 @@
 */
 
 .c-pagesection {
-  padding-top: pxtorem(60px);
-  padding-bottom: pxtorem(60px);
+  padding-top: calc(60 / 16 * 1rem);
+  padding-bottom: calc(60 / 16 * 1rem);
   background-color: $color-gray8;
 
   @include mq(medium) {
-    padding-top: pxtorem(82px);
-    padding-bottom: pxtorem(82px);
+    padding-top: calc(82 / 16 * 1rem);
+    padding-bottom: calc(82 / 16 * 1rem);
   }
 
   @include mq(large) {
-    padding-top: pxtorem(144px);
-    padding-bottom: pxtorem(144px);
+    padding-top: calc(144 / 16 * 1rem);
+    padding-bottom: calc(144 / 16 * 1rem);
   }
 }
 
@@ -78,13 +78,13 @@
 }
 
 .c-pagesection__body + .c-pagesection__body {
-  margin-top: pxtorem(60px);
+  margin-top: calc(60 / 16 * 1rem);
 
   @include mq(medium) {
-    margin-top: pxtorem(82px);
+    margin-top: calc(82 / 16 * 1rem);
   }
 
   @include mq(large) {
-    margin-top: pxtorem(144px);
+    margin-top: calc(144 / 16 * 1rem);
   }
 }

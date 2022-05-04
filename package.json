@@ -16,28 +16,24 @@
     "clean": "rimraf dist",
     "styles:prod": "sass --no-source-map --style=compressed './src/assets/scss':'./dist/css'",
     "styles:dev": "sass src/assets/scss:dist/css",
-    "scripts:prod": "webpack --config webpack.config.js --mode production",
-    "scripts:dev": "webpack --config webpack.config.js --mode development",
+    "scripts:prod": "esbuild \"src/assets/js/main.js\" --target=\"es6\" --bundle --minify --outfile=\"dist/js/main.bundle.js\"",
+    "scripts:dev": "esbuild \"src/assets/js/main.js\" --target=\"es6\" --bundle --outfile=\"dist/js/main.bundle.js\"",
     "server": "browser-sync start --server \"./dist\" --files \"./dist\" --no-open",
     "eleventy": "npx eleventy --quiet",
     "watch:eleventy": "onchange \"./src/**/*.{njk,md}\" -- npm run eleventy",
     "watch:scripts": "onchange \"./src/assets/js/**/*\" -- npm run scripts:dev",
     "watch:styles": "onchange \"./src/assets/scss/**/*\" -- npm run styles:dev",
     "build": "npm-run-all clean --parallel styles:prod scripts:prod eleventy",
-    "watch": "npm-run-all --parallel server watch:*"
+    "dev": "npm-run-all --parallel server watch:*"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@babel/core": "^7.13.16",
-    "@babel/preset-env": "^7.13.15",
-    "babel-loader": "^8.2.2",
-    "browser-sync": "^2.26.14",
-    "moment": "^2.29.1",
+    "@11ty/eleventy": "^1.0.1",
+    "browser-sync": "^2.27.9",
+    "esbuild": "^0.14.38",
+    "moment": "^2.29.3",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "rimraf": "^2.7.1",
-    "sass": "^1.32.8",
-    "webpack": "^5.24.2",
-    "webpack-cli": "^4.5.0"
+    "rimraf": "^3.0.2",
+    "sass": "^1.51.0"
   }
 }

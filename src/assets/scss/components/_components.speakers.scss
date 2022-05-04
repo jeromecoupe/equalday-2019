@@ -18,7 +18,7 @@
 
 .c-speaker__image-wrapper {
   overflow: hidden;
-  margin-bottom: pxtorem(18px);
+  margin-bottom: calc(18 / 16 * 1rem);
   position: relative;
   background-color: $color-gray7;
   transition: all 0.2s ease-in-out;
@@ -48,9 +48,9 @@
 }
 
 .c-speaker__name {
-  margin-bottom: pxtorem(6px);
+  margin-bottom: calc(6 / 16 * 1rem);
   font-weight: 600;
-  font-size: pxtorem(18px);
+  font-size: calc(18 / 16 * 1rem);
   font-family: $fontstack-alt;
   color: $color-gray8;
   transition: all 0.2s ease-in-out;

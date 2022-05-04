@@ -6,7 +6,7 @@
   @include mq(medium) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: pxtorem(36px);
+    grid-gap: calc(36 / 16 * 1rem);
   }
 
   @include mq(large) {
@@ -15,7 +15,7 @@
 }
 
 .l-intro__content {
-  margin-bottom: pxtorem(36px);
+  margin-bottom: calc(36 / 16 * 1rem);
 
   display: flex;
   flex-direction: column;

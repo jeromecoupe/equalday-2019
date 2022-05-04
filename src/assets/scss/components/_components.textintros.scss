@@ -6,6 +6,6 @@
   color: $color-gray2;
 
   @include mq(medium) {
-    font-size: pxtorem(18px);
+    font-size: calc(18 / 16 * 1rem);
   }
 }

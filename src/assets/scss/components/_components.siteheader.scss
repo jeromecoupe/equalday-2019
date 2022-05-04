@@ -11,8 +11,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding-top: pxtorem(42px);
-  padding-bottom: pxtorem(42px);
+  padding-top: calc(42 / 16 * 1rem);
+  padding-bottom: calc(42 / 16 * 1rem);
 
   &::after {
     content: "";
@@ -20,11 +20,11 @@
     bottom: 0;
     right: 0;
     height: 30px;
-    width: calc(100% - 24px);
+    width: calc(100% - 24 / 16 * 1rem);
     background-color: $color-gray8;
 
     @include mq(medium) {
-      width: calc(100% - 30px);
+      width: calc(100% - 30 / 16 * 1rem);
     }
 
     @include mq(large) {
@@ -32,7 +32,7 @@
     }
 
     @include mq(xlarge) {
-      width: calc(50% + (1300px / 2) + 60px);
+      width: calc(50% + (1300px / 2) + 60 / 16 * 1rem);
     }
   }
 
@@ -42,14 +42,14 @@
   }
 
   @include mq(medium) {
-    padding-top: pxtorem(82px);
-    padding-bottom: pxtorem(42px);
+    padding-top: calc(82 / 16 * 1rem);
+    padding-bottom: calc(42 / 16 * 1rem);
     background-image: url(../img/banner_home_1024.jpg);
   }
 
   @include mq(large) {
-    padding-top: pxtorem(120px);
-    padding-bottom: pxtorem(42px);
+    padding-top: calc(120 / 16 * 1rem);
+    padding-bottom: calc(42 / 16 * 1rem);
     background-image: url(../img/banner_home_1500.jpg);
   }
 }
@@ -88,25 +88,25 @@
 }
 
 .c-siteheader__content {
-  margin-top: pxtorem(84px);
-  margin-bottom: pxtorem(84px);
+  margin-top: calc(84 / 16 * 1rem);
+  margin-bottom: calc(84 / 16 * 1rem);
 
   @include mq(medium) {
-    margin-top: pxtorem(142px);
-    margin-bottom: pxtorem(142px);
+    margin-top: calc(142 / 16 * 1rem);
+    margin-bottom: calc(142 / 16 * 1rem);
     width: 600px;
   }
 
   @include mq(large) {
-    margin-top: pxtorem(180px);
-    margin-bottom: pxtorem(240px);
+    margin-top: calc(180 / 16 * 1rem);
+    margin-bottom: calc(240 / 16 * 1rem);
     width: 760px;
   }
 }
 
 .c-siteheader__event {
-  margin-bottom: pxtorem(12px);
-  font-size: pxtorem(16px);
+  margin-bottom: calc(12 / 16 * 1rem);
+  font-size: calc(16 / 16 * 1rem);
   font-weight: 400;
   color: $color-brand1;
   text-transform: uppercase;
@@ -114,21 +114,21 @@
 }
 
 .c-siteheader__theme {
-  margin-bottom: pxtorem(42px);
+  margin-bottom: calc(42 / 16 * 1rem);
   font-family: $fontstack-alt;
-  font-size: pxtorem(31px);
-  line-height: (42/31);
+  font-size: calc(31 / 16 * 1rem);
+  line-height: calc(42 / 31);
   font-weight: 600;
   color: $color-white;
 
   @include mq(medium) {
-    font-size: pxtorem(45px);
-    line-height: (54/45);
+    font-size: calc(45 / 16 * 1rem);
+    line-height: calc(54 / 45);
   }
 
   @include mq(large) {
-    font-size: pxtorem(61px);
-    line-height: (78/61);
+    font-size: calc(61 / 16 * 1rem);
+    line-height: calc(78 / 61);
   }
 }
 
@@ -140,9 +140,9 @@
 }
 
 .c-siteheader__cta {
-  margin-top: pxtorem(36px);
+  margin-top: calc(36 / 16 * 1rem);
 
   @include mq(large) {
-    margin-top: pxtorem(60px);
+    margin-top: calc(60 / 16 * 1rem);
   }
 }

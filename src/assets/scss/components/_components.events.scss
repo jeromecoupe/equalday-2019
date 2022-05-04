@@ -8,30 +8,30 @@
 }
 
 .c-event__type {
-  margin-bottom: pxtorem(6px);
+  margin-bottom: calc(6 / 16 * 1rem);
   font-weight: 600;
-  font-size: pxtorem(12px);
+  font-size: calc(12 / 16 * 1rem);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: $color-gray3;
 }
 
 .c-event__date {
-  margin-bottom: pxtorem(12px);
-  font-size: pxtorem(20px);
+  margin-bottom: calc(12 / 16 * 1rem);
+  font-size: calc(20 / 16 * 1rem);
   color: $color-brand2;
 }
 
 .c-event__title {
-  margin-bottom: pxtorem(18px);
-  font-size: pxtorem(18px);
-  line-height: (30 / 18);
+  margin-bottom: calc(18 / 16 * 1rem);
+  font-size: calc(18 / 16 * 1rem);
+  line-height: calc(30 / 18);
   font-family: $fontstack-alt;
   color: $color-gray1;
 
   @include mq(large) {
-    font-size: pxtorem(20px);
-    line-height: (30 / 20);
+    font-size: calc(20 / 16 * 1rem);
+    line-height: calc(30 / 20);
   }
 }
 
@@ -48,7 +48,7 @@
 }
 
 .c-event__location {
-  margin-top: pxtorem(12px) * -1;
+  margin-top: calc(12 / 16 * 1rem) * -1;
   margin-bottom: 0;
   color: $color-gray4;
 }

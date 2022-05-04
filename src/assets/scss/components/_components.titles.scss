@@ -3,74 +3,74 @@
 // --------------------------------------------
 
 .c-h1 {
-  font-size: pxtorem(29px);
+  font-size: calc(29 / 16 * 1rem);
   font-weight: 600;
-  line-height: (36/29);
+  line-height: calc(36 / 29);
   font-family: $fontstack-alt;
   color: $color-white;
 
   @include mq(medium) {
-    font-size: pxtorem(31px);
-    line-height: (42/31);
+    font-size: calc(31 / 16 * 1rem);
+    line-height: calc(42 / 31);
   }
 
   @include mq(large) {
-    font-size: pxtorem(36px);
-    line-height: (42/36);
+    font-size: calc(36 / 16 * 1rem);
+    line-height: calc(42 / 36);
   }
 }
 
 .c-h2 {
-  font-size: pxtorem(25px);
+  font-size: calc(25 / 16 * 1rem);
   font-weight: 600;
-  line-height: (30/25);
+  line-height: calc(30 / 25);
   font-family: $fontstack-alt;
   color: $color-white;
 
   @include mq(medium) {
-    font-size: pxtorem(29px);
-    line-height: (36/29);
+    font-size: calc(29 / 16 * 1rem);
+    line-height: calc(36 / 29);
   }
 
   @include mq(large) {
-    font-size: pxtorem(31px);
-    line-height: (42/31);
+    font-size: calc(31 / 16 * 1rem);
+    line-height: calc(42 / 31);
   }
 }
 
 .c-h3 {
-  font-size: pxtorem(23px);
+  font-size: calc(23 / 16 * 1rem);
   font-weight: 600;
-  line-height: (30/23);
+  line-height: calc(30 / 23);
   font-family: $fontstack-alt;
   color: $color-white;
 
   @include mq(medium) {
-    font-size: pxtorem(25px);
-    line-height: (30/25);
+    font-size: calc(25 / 16 * 1rem);
+    line-height: calc(30 / 25);
   }
 
   @include mq(large) {
-    font-size: pxtorem(29px);
-    line-height: (36/29);
+    font-size: calc(29 / 16 * 1rem);
+    line-height: calc(36 / 29);
   }
 }
 
 .c-h4 {
-  font-size: pxtorem(20px);
+  font-size: calc(20 / 16 * 1rem);
   font-weight: 600;
-  line-height: (24/20);
+  line-height: calc(24 / 20);
   font-family: $fontstack-alt;
   color: $color-white;
 
   @include mq(medium) {
-    font-size: pxtorem(23px);
-    line-height: (30/23);
+    font-size: calc(23 / 16 * 1rem);
+    line-height: calc(30 / 23);
   }
 
   @include mq(large) {
-    font-size: pxtorem(25px);
-    line-height: (30/25);
+    font-size: calc(25 / 16 * 1rem);
+    line-height: calc(30 / 25);
   }
 }
 
@@ -79,11 +79,11 @@
 // --------------------------------------------
 
 .c-footertitle {
-  margin-bottom: pxtorem(24px);
+  margin-bottom: calc(24 / 16 * 1rem);
 
-  font-size: pxtorem(16px);
+  font-size: calc(16 / 16 * 1rem);
   font-weight: 600;
-  line-height: (24/16);
+  line-height: calc(24 / 16);
   font-family: $fontstack-alt;
   letter-spacing: 1px;
   color: $color-white;
@@ -109,7 +109,7 @@
   padding: 0;
 
   font-weight: 600;
-  font-size: pxtorem(13px);
+  font-size: calc(13 / 16 * 1rem);
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 1px;
